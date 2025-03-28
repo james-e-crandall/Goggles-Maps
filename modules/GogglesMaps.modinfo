@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="goggles-maps" version="1"
+	xmlns="ModInfo">
+	<!-- Atributions: 
+
+	-->
+	<Properties>
+		<Name>LOC_MODULE_GOGGLES_MAPS_NAME</Name>
+		<Description>LOC_MODULE_GOGGLES_MAPS_DESCRIPTION</Description>
+		<Authors>LOC_AUTHORS_JEC</Authors>
+		<Package>DLC</Package>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="antiquity-age-current">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<Criteria id="antiquity-age-persist" any="true">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration-age-current">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+		</Criteria>
+		<Criteria id="modern-age-current">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="base-game-main-goggles-maps" scope="game" criteria="always">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/maps.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/MapText.xml</Item>
+				</UpdateText>
+				<ImportFiles>
+				</ImportFiles>
+				<UpdateIcons>
+				</UpdateIcons>
+				<ScenarioScripts>
+				</ScenarioScripts>
+				<MapGenScripts>
+				</MapGenScripts>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="shell-goggles-maps" scope="shell" criteria="always">
+			<Actions>
+				<UpdateDatabase>
+					<Item>config/config.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/MapText.xml</Item>
+				</UpdateText>
+				<ImportFiles>
+				</ImportFiles>
+				<UpdateIcons>
+				</UpdateIcons>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

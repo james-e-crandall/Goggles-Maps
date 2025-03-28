@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Maps>
+	</Maps>
+	<MapSizes>
+		<!-- Standard MapSize Domain - For ages where civs on both landmasses can win victories. -->
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_BODACIOUS" Name="LOC_MAPSIZE_BODACIOUS_NAME" Description="LOC_MAPSIZE_BODACIOUS_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="12" DefaultPlayers="15" SortIndex="200"/>
+		<!-- Distant Lands MapSize Domain - For ages where only civs on landmass1 can win victories. 
+			This domain has lower MaxHumans so human players will only spawn on landmass1.  -->
+
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_BODACIOUS" Name="LOC_MAPSIZE_BODACIOUS_NAME" Description="LOC_MAPSIZE_BODACIOUS_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="7" DefaultPlayers="15" SortIndex="200"/>
+
+	</MapSizes>
+	<Parameters>
+
+	</Parameters>
+	
+	<SupportedValuesByMap>
+
+
+	</SupportedValuesByMap>
+</Database>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+
+		<Replace Tag="LOC_MAPSIZE_BODACIOUS_NAME">
+			<Text>Bodacious (128x80)</Text>
+		</Replace>
+
+	</EnglishText>
+</Database>

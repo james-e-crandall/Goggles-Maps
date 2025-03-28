@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MODULE_GOGGLES_MAPS_NAME">
+			<Text>Goggle's Maps</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_SWISS_CONFEDERACY_DESCRIPTION">
+			<Text>Goggle's Map</Text>
+		</Row>
+		<InsertOrIgnore Tag="LOC_AUTHORS_JEC">
+			<Text>The_Goggles_Do_Nothing</Text>
+		</InsertOrIgnore>
+	</EnglishText>
+</Database>
