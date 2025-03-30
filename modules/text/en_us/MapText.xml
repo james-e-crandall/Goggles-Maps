@@ -2,9 +2,19 @@
 <Database>
 	<EnglishText>
 
-		<Replace Tag="LOC_MAPSIZE_BODACIOUS_NAME">
-			<Text>Bodacious (128x80)</Text>
+		<Replace Tag="LOC_MAPSIZE_12_PLAYER_JEC_NAME">
+			<Text>12 Players (128x80)</Text>
 		</Replace>
+		<Replace Tag="LOC_MAPSIZE_15_PLAYER_JEC_NAME">
+			<Text>15 Players (128x80)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_18_PLAYER_JEC_NAME">
+			<Text>18 Players (128x80)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_21_PLAYER_JEC_NAME">
+			<Text>21 Players (128x80)</Text>
+		</Replace>
+
 
 	</EnglishText>
 </Database>

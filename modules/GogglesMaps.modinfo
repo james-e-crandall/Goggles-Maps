@@ -33,7 +33,7 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
-		<ActionGroup id="base-game-main-goggles-maps" scope="game" criteria="always">
+		<ActionGroup id="goggles-maps-maps-always" scope="game" criteria="always">
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/maps.xml</Item>

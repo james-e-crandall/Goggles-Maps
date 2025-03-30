@@ -4,11 +4,17 @@
 	</Maps>
 	<MapSizes>
 		<!-- Standard MapSize Domain - For ages where civs on both landmasses can win victories. -->
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_BODACIOUS" Name="LOC_MAPSIZE_BODACIOUS_NAME" Description="LOC_MAPSIZE_BODACIOUS_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="12" DefaultPlayers="15" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_12_PLAYER_JEC" Name="LOC_MAPSIZE_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="9" DefaultPlayers="12" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_15_PLAYER_JEC" Name="LOC_MAPSIZE_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="12" DefaultPlayers="15" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_18_PLAYER_JEC" Name="LOC_MAPSIZE_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="15" DefaultPlayers="18" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_21_PLAYER_JEC" Name="LOC_MAPSIZE_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="18" DefaultPlayers="21" SortIndex="200"/>
 		<!-- Distant Lands MapSize Domain - For ages where only civs on landmass1 can win victories. 
 			This domain has lower MaxHumans so human players will only spawn on landmass1.  -->
 
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_BODACIOUS" Name="LOC_MAPSIZE_BODACIOUS_NAME" Description="LOC_MAPSIZE_BODACIOUS_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="7" DefaultPlayers="15" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_12_PLAYER_JEC" Name="LOC_MAPSIZE_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="4" DefaultPlayers="12" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_15_PLAYER_JEC" Name="LOC_MAPSIZE_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="7" DefaultPlayers="15" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_18_PLAYER_JEC" Name="LOC_MAPSIZE_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="10" DefaultPlayers="18" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_21_PLAYER_JEC" Name="LOC_MAPSIZE_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="13" DefaultPlayers="21" SortIndex="200"/>
 
 	</MapSizes>
 	<Parameters>
