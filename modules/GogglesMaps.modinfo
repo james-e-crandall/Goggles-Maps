@@ -25,6 +25,10 @@
 		<Criteria id="exploration-age-current">
 			<AgeInUse>AGE_EXPLORATION</AgeInUse>
 		</Criteria>
+		<Criteria id="exploration-age-persist" any="true">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
 		<Criteria id="modern-age-current">
 			<AgeInUse>AGE_MODERN</AgeInUse>
 		</Criteria>
@@ -33,13 +37,33 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
-		<ActionGroup id="goggles-maps-maps-always" scope="game" criteria="always">
+		<ActionGroup id="goggles-maps-always" scope="game" criteria="always">
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/maps.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
+				</UpdateText>
+				<ImportFiles>
+				</ImportFiles>
+				<UpdateIcons>
+				</UpdateIcons>
+				<ScenarioScripts>
+				</ScenarioScripts>
+				<MapGenScripts>
+				</MapGenScripts>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-exploration-age-current" scope="game" criteria="exploration-age-current">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/religion.sql</Item>
+				</UpdateDatabase>
+				<UpdateText>
 				</UpdateText>
 				<ImportFiles>
 				</ImportFiles>
