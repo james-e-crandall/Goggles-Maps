@@ -1,62 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<Types>
-		<Replace Type="MAPSIZE_12_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
-		<Replace Type="MAPSIZE_15_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
-		<Replace Type="MAPSIZE_18_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
-		<Replace Type="MAPSIZE_21_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
-
+		<!-- Custom -->
+		<Replace Type="MAPSIZE_GOGGLES_12_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_GOGGLES_15_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_GOGGLES_18_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_GOGGLES_21_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
+		<!-- Standard More Players -->
+		<Replace Type="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC" Kind="KIND_MAPSIZE"/>
 	</Types>
 	<Maps>
-		<Replace MapSizeType="MAPSIZE_12_PLAYER_JEC" Name="LOC_MAPSIZE_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_JEC_DESCRIPTION" DefaultPlayers="12" PlayersLandmass1="7" PlayersLandmass2="5" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
-		<Replace MapSizeType="MAPSIZE_15_PLAYER_JEC" Name="LOC_MAPSIZE_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_JEC_DESCRIPTION" DefaultPlayers="15" PlayersLandmass1="9" PlayersLandmass2="6" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
-		<Replace MapSizeType="MAPSIZE_18_PLAYER_JEC" Name="LOC_MAPSIZE_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_JEC_DESCRIPTION" DefaultPlayers="18" PlayersLandmass1="11" PlayersLandmass2="7" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
-		<Replace MapSizeType="MAPSIZE_21_PLAYER_JEC" Name="LOC_MAPSIZE_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_JEC_DESCRIPTION" DefaultPlayers="21" PlayersLandmass1="13" PlayersLandmass2="8" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
-
-
-
+		<!-- Custom -->
+		<Replace MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_DESCRIPTION" DefaultPlayers="12" PlayersLandmass1="7" PlayersLandmass2="5" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_DESCRIPTION" DefaultPlayers="15" PlayersLandmass1="9" PlayersLandmass2="6" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_DESCRIPTION" DefaultPlayers="18" PlayersLandmass1="11" PlayersLandmass2="7" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_DESCRIPTION" DefaultPlayers="21" PlayersLandmass1="13" PlayersLandmass2="8" GridWidth="128" GridHeight="80" NumNaturalWonders="6" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
+		<!-- Standard More Players -->
+		<Row MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC" Name="LOC_MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_TINY_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="5" PlayersLandmass2="3" GridWidth="60" GridHeight="38" NumNaturalWonders="3" OceanWidth="4" LakeSizeCutoff="6" LakeGenerationFrequency="25" Continents="2" StartSectorRows="3" StartSectorCols="2"/>
+		<Row MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC" Name="LOC_MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_SMALL_DESCRIPTION" DefaultPlayers="10" PlayersLandmass1="6" PlayersLandmass2="4" GridWidth="74" GridHeight="46" NumNaturalWonders="4" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="3" StartSectorCols="3"/>
+		<Row MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC" Name="LOC_MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_STANDARD_DESCRIPTION" DefaultPlayers="12" PlayersLandmass1="7" PlayersLandmass2="5" GridWidth="84" GridHeight="54" NumNaturalWonders="5" OceanWidth="4" LakeSizeCutoff="8" LakeGenerationFrequency="25" Continents="4" StartSectorRows="4" StartSectorCols="3"/>
+		
 	</Maps>	
 	<AgeProgressionEvents>
-		<!-- MAPSIZE_12_PLAYER_JEC -->
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_12_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="15"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_12_PLAYER_JEC"/>
+		<!-- MAPSIZE_GOGGLES_12_PLAYER_JEC -->
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="8"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_12_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_12_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="4"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_12_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_12_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="0"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC"/>
 		<!-- MAPSIZE_15_PLAYER_JEC -->
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_15_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="15"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_15_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="6"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_15_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_15_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="9"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="3"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_15_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_15_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="0"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC"/>
 		<!-- MAPSIZE_18_PLAYER_JEC -->
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_18_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="15"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_18_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="4"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_18_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_18_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="2"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_18_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_18_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="0"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC"/>
 		<!-- MAPSIZE_21_PLAYER_JEC -->
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_21_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="15"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_21_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="3"	AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_21_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_21_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="2"	AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC"/>
 
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_21_PLAYER_JEC"/>
-		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="10"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_21_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER"			Points="1"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC"/>
+		<Replace AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED"	Points="0"	AgeType="AGE_MODERN" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC"/>
 
+		<!-- MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC -->
+		<!-- <Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="30" AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC"/>
 
+		<Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="25" AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC"/>
 
+		<Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_MODERN" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="0" AgeType="AGE_MODERN" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC"/> -->
 
+		<!-- MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC -->
+		<!-- <Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="25" AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="10" AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_MODERN" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="0" AgeType="AGE_MODERN" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC"/> -->
+
+		<!-- MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC -->
+		<!-- <Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="10" AgeType="AGE_ANTIQUITY" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="5" AgeType="AGE_EXPLORATION" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_TURN_COUNTER" Points="1" AgeType="AGE_MODERN" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC"/>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="0" AgeType="AGE_MODERN" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC"/> -->
 
 	</AgeProgressionEvents>
 </Database>

@@ -3,19 +3,31 @@
 	<Maps>
 	</Maps>
 	<MapSizes>
+		<!-- Custom -->
 		<!-- Standard MapSize Domain - For ages where civs on both landmasses can win victories. -->
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_12_PLAYER_JEC" Name="LOC_MAPSIZE_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="9" DefaultPlayers="12" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_15_PLAYER_JEC" Name="LOC_MAPSIZE_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="12" DefaultPlayers="15" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_18_PLAYER_JEC" Name="LOC_MAPSIZE_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="15" DefaultPlayers="18" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_21_PLAYER_JEC" Name="LOC_MAPSIZE_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="18" DefaultPlayers="21" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="9" DefaultPlayers="12" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="12" DefaultPlayers="15" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="15" DefaultPlayers="18" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="18" DefaultPlayers="21" SortIndex="200"/>
 		<!-- Distant Lands MapSize Domain - For ages where only civs on landmass1 can win victories. 
 			This domain has lower MaxHumans so human players will only spawn on landmass1.  -->
 
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_12_PLAYER_JEC" Name="LOC_MAPSIZE_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="4" DefaultPlayers="12" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_15_PLAYER_JEC" Name="LOC_MAPSIZE_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="7" DefaultPlayers="15" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_18_PLAYER_JEC" Name="LOC_MAPSIZE_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="10" DefaultPlayers="18" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_21_PLAYER_JEC" Name="LOC_MAPSIZE_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="13" DefaultPlayers="21" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_GOGGLES_12_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="4" DefaultPlayers="12" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_GOGGLES_15_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="7" DefaultPlayers="15" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_GOGGLES_18_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="10" DefaultPlayers="18" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_GOGGLES_21_PLAYER_JEC" Name="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="13" DefaultPlayers="21" SortIndex="200"/>
+	
+		<!-- Standard More Players -->
+		<!-- Standard MapSize Domain - For ages where civs on both landmasses can win victories. -->
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC" Name="LOC_MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="8" MaxHumans="5" DefaultPlayers="8" SortIndex="20"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC" Name="LOC_MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="10" MaxHumans="7" DefaultPlayers="10" SortIndex="30"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC" Name="LOC_MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_STANDARD_GOGGLES_6_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="9" DefaultPlayers="12" SortIndex="40"/>
 
+		<!-- Distant Lands MapSize Domain - For ages where only civs on landmass1 can win victories. 
+			This domain has lower MaxHumans so human players will only spawn on landmass1.  -->
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC" Name="LOC_MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="8" MaxHumans="5" DefaultPlayers="8" SortIndex="20"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC" Name="LOC_MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="10" MaxHumans="7" DefaultPlayers="10" SortIndex="30"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC" Name="LOC_MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC_NAME" Description="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_STANDARD_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="9" DefaultPlayers="12" SortIndex="40"/>
 	</MapSizes>
 	<Parameters>
 

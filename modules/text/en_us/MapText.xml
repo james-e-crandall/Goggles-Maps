@@ -2,19 +2,28 @@
 <Database>
 	<EnglishText>
 
-		<Replace Tag="LOC_MAPSIZE_12_PLAYER_JEC_NAME">
-			<Text>12 Players (128x80)</Text>
+		<Replace Tag="LOC_MAPSIZE_GOGGLES_12_PLAYER_JEC_NAME">
+			<Text>Goggle's 12 Players (128x80)</Text>
 		</Replace>
-		<Replace Tag="LOC_MAPSIZE_15_PLAYER_JEC_NAME">
-			<Text>15 Players (128x80)</Text>
+		<Replace Tag="LOC_MAPSIZE_GOGGLES_15_PLAYER_JEC_NAME">
+			<Text>Goggle's 15 Players (128x80)</Text>
 		</Replace>
-		<Replace Tag="LOC_MAPSIZE_18_PLAYER_JEC_NAME">
-			<Text>18 Players (128x80)</Text>
+		<Replace Tag="LOC_MAPSIZE_GOGGLES_18_PLAYER_JEC_NAME">
+			<Text>Goggle's 18 Players (128x80)</Text>
 		</Replace>
-		<Replace Tag="LOC_MAPSIZE_21_PLAYER_JEC_NAME">
-			<Text>21 Players (128x80)</Text>
+		<Replace Tag="LOC_MAPSIZE_GOGGLES_21_PLAYER_JEC_NAME">
+			<Text>Goggle's 21 Players (128x80)</Text>
 		</Replace>
 
+		<Replace Tag="LOC_MAPSIZE_TINY_GOGGLES_8_PLAYER_JEC_NAME">
+			<Text>Goggle's Tiny 8 Players (60x38)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_SMALL_GOGGLES_10_PLAYER_JEC_NAME">
+			<Text>Goggle's Small 10 Players (74x46)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_STANDARD_GOGGLES_12_PLAYER_JEC_NAME">
+			<Text>Goggle's Regular 12 Players (84x54)</Text>
+		</Replace>
 
 	</EnglishText>
 </Database>

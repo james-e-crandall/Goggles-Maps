@@ -55,13 +55,33 @@
 				</MapGenScripts>
 			</Actions>
 		</ActionGroup>
+		<ActionGroup id="goggles-maps-antiquity-age-current" scope="game" criteria="antiquity-age-current">
+			<Properties>
+				<LoadOrder>100</LoadOrder>
+			</Properties>
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/religion-antiquity.sql</Item>
+				</UpdateDatabase>
+				<UpdateText>
+				</UpdateText>
+				<ImportFiles>
+				</ImportFiles>
+				<UpdateIcons>
+				</UpdateIcons>
+				<ScenarioScripts>
+				</ScenarioScripts>
+				<MapGenScripts>
+				</MapGenScripts>
+			</Actions>
+		</ActionGroup>
 		<ActionGroup id="goggles-maps-exploration-age-current" scope="game" criteria="exploration-age-current">
 			<Properties>
 				<LoadOrder>100</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/religion.sql</Item>
+					<Item>data/religion-exploration.sql</Item>
 				</UpdateDatabase>
 				<UpdateText>
 				</UpdateText>
