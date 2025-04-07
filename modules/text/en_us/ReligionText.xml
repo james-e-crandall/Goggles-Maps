@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<!--Belief Names Enhancer-->
+		<!--Belief Descriptions Enhancer-->
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_1_NAME">
+			<Text>Hygieia, Iaso , Aceso, Panacea</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_1_DESCRIPTION">
+			<Text>+1 Relic Slot in Hospitals in Cities</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_2_NAME">
+			<Text>Artemis</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_2_DESCRIPTION">
+			<Text>+1 Relic Slot in Menagerie in Cities</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_3_NAME">
+			<Text>Rokuonji</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_3_DESCRIPTION">
+			<Text>+1 Relic Slot in Pavilion in Cities</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_4_NAME">
+			<Text>Platonic Ideal</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_4_DESCRIPTION">
+			<Text>+1 Relic Slot in Golden Age Academy in Cities</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_5_NAME">
+			<Text>Katharsis</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_ENHANCER_5_DESCRIPTION">
+			<Text>+1 Relic Slot in Golden Age Amphitheater in Cities</Text>
+		</Row>
+
+		<!--Belief Names Reliquary-->
+		<!--Belief Descriptions Reliquary-->
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_1_NAME">
+			<Text>Memori</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_1_DESCRIPTION">
+			<Text>+1 Relic for building a wonder.</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_2_NAME">
+			<Text>Lupercalia</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_2_DESCRIPTION">
+			<Text>+1 Relic at the start of a celebration.</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_3_NAME">
+			<Text>Siddhis</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_3_DESCRIPTION">
+			<Text>+1 Relic for completing a Civic Mastery.</Text>
+		</Row>
+
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_4_NAME">
+			<Text>Nammu-Ki-An</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_RELIQUARY_4_DESCRIPTION">
+			<Text>+1 Relic for a new Resouce.</Text>
+		</Row>
+
+
+		<!--Belief Names Founder-->
+		<!--Belief Descriptions Founder-->
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_FOUNDER_1_NAME">
+			<Text>theos krateo</Text>
+		</Row>
+		<Row Tag="LOC_BELIEF_GOGGLES_BONUS_FOUNDER_1_DESCRIPTION">
+			<Text>+2[icon:YIELD_DIPLOMACY] Influence for every foreign Settlement following your Religion. </Text>
+		</Row>
+
+    </EnglishText>
+</Database>

@@ -81,9 +81,12 @@
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
-					<Item>data/religion-exploration.sql</Item>
+					<Item>data/religion-exploration-gameeffects.xml</Item>
+					<Item>data/religion-exploration.xml</Item>
+					<!-- <Item>data/religion-exploration.sql</Item> -->
 				</UpdateDatabase>
 				<UpdateText>
+					<Item>text/en_us/ReligionText.xml</Item>
 				</UpdateText>
 				<ImportFiles>
 				</ImportFiles>
