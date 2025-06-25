@@ -4,7 +4,7 @@
 		<Row Tag="LOC_MODULE_GOGGLES_MAPS_NAME">
 			<Text>Goggle's Maps</Text>
 		</Row>
-		<Row Tag="LOC_MODULE_SWISS_CONFEDERACY_DESCRIPTION">
+		<Row Tag="LOC_MODULE_MAPS_DESCRIPTION">
 			<Text>Goggle's Map</Text>
 		</Row>
 		<InsertOrIgnore Tag="LOC_AUTHORS_JEC">
