@@ -34,7 +34,7 @@
 			<Text>24 Players (128x150)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_24_PLAYER_128_150_JEC_DESCRIPTION">
-			<Text>The bigest possible map for epic, long-duration battles.</Text>
+			<Text>The Bodacious map is the bigest possible for epic, long-duration battles.</Text>
 		</Replace>
 	</EnglishText>
 </Database>
