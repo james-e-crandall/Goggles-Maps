@@ -13,6 +13,13 @@
 		<Replace MapSizeType="MAPSIZE_18_PLAYER_128_100_JEC" Name="LOC_MAPSIZE_18_PLAYER_128_100_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_128_100_JEC_DESCRIPTION" DefaultPlayers="18" PlayersLandmass1="11" PlayersLandmass2="7" GridWidth="128" GridHeight="100" NumNaturalWonders="10" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="10" StartSectorRows="4" StartSectorCols="3"/>
 		<Replace MapSizeType="MAPSIZE_21_PLAYER_128_120_JEC" Name="LOC_MAPSIZE_21_PLAYER_128_120_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_128_120_JEC_DESCRIPTION" DefaultPlayers="21" PlayersLandmass1="13" PlayersLandmass2="8" GridWidth="128" GridHeight="120" NumNaturalWonders="12" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="10" StartSectorRows="4" StartSectorCols="3"/>
 		<Replace MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Name="LOC_MAPSIZE_24_PLAYER_128_150_JEC_NAME" Description="LOC_MAPSIZE_24_PLAYER_128_150_JEC_DESCRIPTION" DefaultPlayers="24" PlayersLandmass1="15" PlayersLandmass2="9" GridWidth="128" GridHeight="150" NumNaturalWonders="17" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="12" StartSectorRows="4" StartSectorCols="3"/>
-
 	</Maps>	
+	<MapResourceMinimumAmountModifier>
+		<!--====Default is used if this data isn't filled out for a map type. Tt ensures the resource gen stays consistent per map size================-->
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_12_PLAYER_128_80_JEC" Amount="6"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_15_PLAYER_128_90_JEC" Amount="8"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_18_PLAYER_128_100_JEC" Amount="10"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_21_PLAYER_128_120_JEC" Amount="12"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Amount="14"/>
+	</MapResourceMinimumAmountModifier>
 </Database>

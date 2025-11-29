@@ -41,6 +41,7 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/maps.xml</Item>
+					<Item>data/victories.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>

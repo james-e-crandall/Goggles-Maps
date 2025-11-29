@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<Database>
+<AgeProgressionEventMapSizeOverrides>
+        <Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_12_PLAYER_128_80_JEC" Points="12"/>
+        <Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_15_PLAYER_128_90_JEC" Points="9"/>
+        <Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_18_PLAYER_128_100_JEC" Points="6"/>
+        <Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_21_PLAYER_128_120_JEC" Points="3"/>
+        <Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Points="1"/>
+</AgeProgressionEventMapSizeOverrides>
+</Database>
