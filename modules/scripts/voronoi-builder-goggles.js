@@ -1,5 +1,6 @@
 import { Diagram } from '/core/scripts/external/TypeScript-Voronoi-master/src/diagram.js';
-import { VoronoiHex } from '/base-standard/scripts/voronoi-hex.js';
+//import { VoronoiHex } from '/base-standard/scripts/voronoi-hex.js';
+import { VoronoiHex } from'/goggles-maps/scripts/voronoi-hex-goggles.js';
 import { WrapType, MapDims, VoronoiUtils } from '/goggles-maps/scripts/kd-tree-goggles.js';
 import { ContinentGenerator } from '/goggles-maps/scripts/voronoi_generators/continent-generator-goggles.js';
 import { GeneratorType } from '/goggles-maps/scripts/voronoi_generators/map-generator-goggles.js';

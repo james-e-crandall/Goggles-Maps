@@ -328,7 +328,7 @@ class ContinentGenerator extends MapGenerator {
             label: "Player Areas",
             description: "The number of player areas to spawn on this landmass.",
             min: 0,
-            max: 20,
+            max: 30,
             default: 4
           },
           {

@@ -1,7 +1,8 @@
 import { VoronoiBuilder } from '/goggles-maps/scripts/voronoi-builder-goggles.js';
 import { WrapType, VoronoiUtils } from '/goggles-maps/scripts/kd-tree-goggles.js';
 import '/core/scripts/external/TypeScript-Voronoi-master/src/diagram.js';
-import '/base-standard/scripts/voronoi-hex.js';
+//import '/base-standard/scripts/voronoi-hex.js';
+import '/goggles-maps/scripts/voronoi-hex-goggles.js';
 import '/core/scripts/MathHelpers.js';
 import '/base-standard/scripts/heap.js';
 import '/goggles-maps/scripts/voronoi_generators/continent-generator-goggles.js';
