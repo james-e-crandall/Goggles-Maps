@@ -1,31 +1,33 @@
-import { sub2, rotate2, add2, dot2, dot2_90, mul2s, mul2 } from '../../../core/scripts/MathHelpers.js';
-import { QuadTree } from '../quadtree.js';
-import { kdTree, PlateBoundaryPosGetter, RegionType, MapSize, VoronoiUtils, MapDims, RegionCell, RegionCellPosGetter, Aabb2, TerrainType } from '../kd-tree.js';
-import { RandomImpl } from '../random-pcg-32.js';
-import { PlateRegion, LandmassRegion } from '../voronoi-region.js';
-import { MapGenerator, GeneratorType } from './map-generator.js';
-import { RuleAvoidEdge } from '../voronoi_rules/avoid-edge.js';
-import { RuleAvoidOtherRegions } from '../voronoi_rules/avoid-other-regions.js';
-import { RuleCellArea } from '../voronoi_rules/cell-area.js';
-import { RuleNearMapCenter } from '../voronoi_rules/near-map-center.js';
-import { RuleNearNeighbor } from '../voronoi_rules/near-neighbor.js';
-import { RuleNearPlateBoundary } from '../voronoi_rules/near-plate-boundary.js';
-import { RuleNearRegionSeed } from '../voronoi_rules/near-region-seed.js';
-import { RuleNeighborsInRegion } from '../voronoi_rules/neighbors-in-region.js';
-import { RulePreferLatitude } from '../voronoi_rules/prefer-latitude.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/voronoi.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/rbtree.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/vertex.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/edge.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/cell.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/diagram.js';
-import '../../../core/scripts/external/TypeScript-Voronoi-master/src/halfedge.js';
-import '../voronoi_rules/rules-base.js';
+import { sub2, rotate2, add2, dot2, dot2_90, mul2s, mul2 } from '/core/scripts/MathHelpers.js';
+import { QuadTree, WrappedQuadTree } from '/base-standard/scripts/quadtree.js';
+import { RuleNearOtherRegion } from '/base-standard/scripts/voronoi_rules/near-other-region.js';
+import { WrappedKdTree, PlateBoundaryPosGetter, RegionType, MapSize, VoronoiUtils, MapDims, RegionCell, WrapType, kdTree, RegionCellPosGetter, Aabb2, TerrainType } from '/goggles-maps/scripts/kd-tree-goggles.js';
+import { RandomImpl } from '/base-standard/scripts/random-pcg-32.js';
+import { PlateRegion, LandmassRegion } from '/base-standard/scripts/voronoi-region.js';
+import { MapGenerator, GeneratorType } from '/goggles-maps/scripts/voronoi_generators/map-generator-goggles.js';
+import { RuleAvoidEdge } from '/base-standard/scripts/voronoi_rules/avoid-edge.js';
+import { RuleAvoidOtherRegions } from '/base-standard/scripts/voronoi_rules/avoid-other-regions.js';
+import { RuleCellArea } from '/base-standard/scripts/voronoi_rules/cell-area.js';
+import { RuleNearMapCenter } from '/base-standard/scripts/voronoi_rules/near-map-center.js';
+import { RuleNearNeighbor } from '/base-standard/scripts/voronoi_rules/near-neighbor.js';
+import { RuleNearPlateBoundary } from '/base-standard/scripts/voronoi_rules/near-plate-boundary.js';
+import { RuleNearRegionSeed } from '/base-standard/scripts/voronoi_rules/near-region-seed.js';
+import { RuleNeighborsInRegion } from '/base-standard/scripts/voronoi_rules/neighbors-in-region.js';
+import { RulePreferLatitude } from '/base-standard/scripts/voronoi_rules/prefer-latitude.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/site.js';
+import '/base-standard/scripts/voronoi_rules/rules-base.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/voronoi.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/rbtree.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/vertex.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/edge.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/cell.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/diagram.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/halfedge.js';
 
 class ContinentGenerator extends MapGenerator {
   m_plateRegions = [];
   m_landmassRegions = [];
-  m_plateBoundaries = new kdTree(PlateBoundaryPosGetter);
+  m_plateBoundaries = new WrappedKdTree(PlateBoundaryPosGetter);
   m_platesDiagram;
   m_plateCells = [];
   m_plateRuleConfigs = [
@@ -76,7 +78,8 @@ class ContinentGenerator extends MapGenerator {
         internalConfig: { m_plateBoundaries: this.m_plateBoundaries }
       }
     ],
-    [RulePreferLatitude, { isActive: true, weight: 0.5, record: {} }]
+    [RulePreferLatitude, { isActive: true, weight: 0.5, record: {} }],
+    [RuleNearOtherRegion, { isActive: false, weight: 0.5, record: {} }]
   ];
   m_coastalIslandRuleConfigs = [
     [
@@ -653,13 +656,21 @@ class ContinentGenerator extends MapGenerator {
         MapDims[this.m_mapSize].x * MapDims[this.m_mapSize].y * voronoiCellRatio
       );
       const sites2 = VoronoiUtils.createRandomSites(cellCount, bbox.xr, bbox.yb);
-      this.m_platesDiagram = VoronoiUtils.computeVoronoi(sites2, bbox, 2);
+      this.m_platesDiagram = VoronoiUtils.computeVoronoi(sites2, bbox, 2, this.m_wrap);
       this.m_plateCells = this.m_platesDiagram.cells.map((cell, index) => {
         const area2 = VoronoiUtils.calculateCellArea(cell);
         const regionCell = new RegionCell(cell, index, area2);
         return regionCell;
       });
-      cellKdTree = new kdTree(RegionCellPosGetter);
+      if (this.m_wrap == WrapType.None) {
+        cellKdTree = new kdTree(RegionCellPosGetter);
+      } else {
+        cellKdTree = new WrappedKdTree(
+          RegionCellPosGetter,
+          new Aabb2({ x: 0, y: 0 }, this.m_worldDims),
+          this.m_wrap
+        );
+      }
       cellKdTree.build(this.m_plateCells);
     } else {
       this.m_platesDiagram = void 0;
@@ -683,7 +694,8 @@ class ContinentGenerator extends MapGenerator {
         this.m_plateRegions,
         this.m_plateRules,
         this.m_worldDims,
-        this.m_plateRegions
+        this.m_plateRegions,
+        this.m_wrapDistOpts
       );
       region.growStep();
     }
@@ -749,6 +761,8 @@ class ContinentGenerator extends MapGenerator {
         }
       }
     }
+    this.m_plateBoundaries.bounds = new Aabb2({ x: 0, y: 0 }, this.m_worldDims);
+    this.m_plateBoundaries.wrapType = this.m_wrap;
     this.m_plateBoundaries.build(plateBoundaries);
   }
   growLandmasses() {
@@ -762,24 +776,37 @@ class ContinentGenerator extends MapGenerator {
     }
     const growingRegions = this.m_landmassRegions.slice(1);
     const quadRegion = new Aabb2({ x: 0, y: 0 }, this.m_worldDims);
-    const quadTree = new QuadTree(
-      quadRegion,
-      (item) => item.cell.site
-    );
+    const quadGetPos = (item) => item.cell.site;
+    const quadTree = this.m_wrap == WrapType.None ? new QuadTree(quadRegion, quadGetPos) : new WrappedQuadTree(quadRegion, quadGetPos, void 0, void 0, this.m_wrap);
+    for (const rule of this.m_landmassRules) {
+      if (!rule.isActive) continue;
+      if (rule.name == RuleAvoidOtherRegions.getName()) {
+        rule.setQuadTree(quadTree);
+      } else if (rule.name == RuleNearOtherRegion.getName()) {
+        const regionPositions = this.m_landmassRegions.reduce((acc, value) => {
+          if (value.id > 0) {
+            acc.push({ regionId: value.id, pos: value.seedLocation });
+          }
+          return acc;
+        }, []);
+        rule.buildFromDelaunayTriangulation(
+          regionPositions,
+          { xl: 0, xr: this.m_worldDims.x, yt: 0, yb: this.m_worldDims.y },
+          this.m_wrap
+        );
+        rule.setQuadTree(quadTree);
+      }
+    }
     for (const region of growingRegions) {
       region.prepareGrowth(
         this.m_regionCells,
         this.m_landmassRegions,
         this.m_landmassRules,
         this.m_worldDims,
-        this.m_plateRegions
+        this.m_plateRegions,
+        this.m_wrapDistOpts
       );
       region.SetQuadTree(quadTree);
-    }
-    for (const rule of this.m_landmassRules) {
-      if (rule.name == RuleAvoidOtherRegions.getName()) {
-        rule.setQuadTree(quadTree);
-      }
     }
     let regionIndex = 0;
     while (growingRegions.length > 0) {
@@ -838,18 +865,22 @@ class ContinentGenerator extends MapGenerator {
     );
     commonIslandsRegion.minOrder = maxLandmassCellCount;
     this.m_landmassRegions.push(commonIslandsRegion);
-    const landmassesKdTree = new kdTree((data) => {
-      return { x: data.cell.site.x, y: data.cell.site.y };
-    });
+    const landmassesKdTree = this.m_wrap == WrapType.None ? new kdTree(RegionCellPosGetter) : new WrappedKdTree(
+      RegionCellPosGetter,
+      new Aabb2({ x: 0, y: 0 }, this.m_worldDims),
+      this.m_wrap
+    );
     landmassesKdTree.build(
       this.m_regionCells.filter(
         (value) => this.m_landmassRegions[value.landmassId].type === RegionType.Landmass
       )
     );
     for (let i = 0; i < islandCount; ++i) {
-      const islandKdTree = new kdTree((data) => {
-        return { x: data.cell.site.x, y: data.cell.site.y };
-      });
+      const islandKdTree = this.m_wrap == WrapType.None ? new kdTree(RegionCellPosGetter) : new WrappedKdTree(
+        RegionCellPosGetter,
+        new Aabb2({ x: 0, y: 0 }, this.m_worldDims),
+        this.m_wrap
+      );
       islandKdTree.build(
         this.m_regionCells.filter(
           (value) => this.m_landmassRegions[value.landmassId].type === RegionType.Island
@@ -863,7 +894,8 @@ class ContinentGenerator extends MapGenerator {
         m_worldDims: this.m_worldDims,
         totalArea: 0,
         cellCount: 0,
-        rules: this.m_islandRules
+        rules: this.m_islandRules,
+        wrap: this.m_wrapDistOpts
       };
       const islandSeedCandidates = [];
       for (const regionCell of this.m_regionCells) {
@@ -909,7 +941,8 @@ class ContinentGenerator extends MapGenerator {
         this.m_landmassRegions,
         this.m_islandRules,
         this.m_worldDims,
-        this.m_plateRegions
+        this.m_plateRegions,
+        this.m_wrapDistOpts
       );
       islandRegion.considerationList.push({ id: islandSeedCandidates[randomIndex][1].id, score: 1 });
       while (islandRegion.growStep()) {
@@ -933,7 +966,7 @@ class ContinentGenerator extends MapGenerator {
         continue;
       }
       const landmassSettings = this.getTypedSettings().landmass[i - 1];
-      const coastalIslandSpawnCount = landmassSettings.coastalIslands;
+      let coastalIslandSpawnCount = landmassSettings.coastalIslands;
       if (coastalIslandSpawnCount === 0) {
         continue;
       }
@@ -943,7 +976,11 @@ class ContinentGenerator extends MapGenerator {
         let nearRegion = false;
         const filterCallback = (considerCell) => {
           if (considerCell.landmassId === landmassRegion.id) {
-            if (VoronoiUtils.distanceBetweenSites(cell.cell.site, considerCell.cell.site) > minLandmassRange) {
+            if (VoronoiUtils.distanceBetweenSites(
+              cell.cell.site,
+              considerCell.cell.site,
+              this.m_wrapDistOpts
+            ) > minLandmassRange) {
               nearRegion = true;
             } else {
               return VoronoiUtils.RegionCellFilterResult.HaltFail;
@@ -957,7 +994,8 @@ class ContinentGenerator extends MapGenerator {
           cell,
           this.m_regionCells,
           maxLandmassRange,
-          filterCallback
+          filterCallback,
+          this.m_wrapDistOpts
         );
         return filterResult === VoronoiUtils.RegionCellFilterResult.Continue ? nearRegion : false;
       });
@@ -976,7 +1014,8 @@ class ContinentGenerator extends MapGenerator {
           cell,
           this.m_regionCells,
           minOtherLandmassRange,
-          filterCallback
+          filterCallback,
+          this.m_wrapDistOpts
         );
         return filterResult === VoronoiUtils.RegionCellFilterResult.Continue;
       });
@@ -987,9 +1026,10 @@ class ContinentGenerator extends MapGenerator {
             avoidOtherRegionsRule.configValues.regionId = landmassRegion.id;
             console.log("setting islands for landmass " + landmassRegion.id + " to slightly avoid self");
           } else if (avoidOtherRegionsRule.key === "avoidOther") {
-            avoidOtherRegionsRule.configValues.regionId = landmassRegion.id === 1 ? 2 : 1;
+            avoidOtherRegionsRule.configValues.regionId = landmassRegion.id;
+            avoidOtherRegionsRule.configValues.regionIdIsWhitelist = true;
             console.log(
-              "setting islands for landmass " + landmassRegion.id + " to strongly avoid " + avoidOtherRegionsRule.configValues.regionId
+              "setting islands for landmass " + landmassRegion.id + " to strongly avoid regions with id different from " + avoidOtherRegionsRule.configValues.regionId
             );
           }
         }
@@ -1013,13 +1053,17 @@ class ContinentGenerator extends MapGenerator {
         this.m_landmassRegions,
         this.m_coastalIslandRules,
         this.m_worldDims,
-        this.m_plateRegions
+        this.m_plateRegions,
+        this.m_wrapDistOpts
       );
       console.log("Found " + islandSpawnList.length + " cells for coastal island spots");
+      if (islandSpawnList.length == 0) continue;
       let scoredIslandSpawnList = [];
       for (const cell of islandSpawnList) {
         scoredIslandSpawnList.push({ cell, score: coastalIslandRegion.scoreSingleCell(cell) });
       }
+      scoredIslandSpawnList = scoredIslandSpawnList.filter((value) => value.score > 0);
+      coastalIslandSpawnCount = Math.min(coastalIslandSpawnCount, scoredIslandSpawnList.length);
       scoredIslandSpawnList.sort((a, b) => b.score - a.score);
       scoredIslandSpawnList = scoredIslandSpawnList.slice(
         0,
@@ -1153,7 +1197,8 @@ class ContinentGenerator extends MapGenerator {
       m_worldDims: this.m_worldDims,
       totalArea: 0,
       cellCount: 0,
-      rules: this.m_mountainRules
+      rules: this.m_mountainRules,
+      wrap: this.m_wrapDistOpts
     };
     for (const rule of this.m_mountainRules) {
       if (rule.isActive) {
@@ -1203,7 +1248,9 @@ class ContinentGenerator extends MapGenerator {
     volcanoCells.forEach((cell) => {
       cell.terrainType = TerrainType.Volcano;
     });
-    this.m_regionCells.forEach((cell) => cell.currentScore = 0);
+    this.m_regionCells.forEach((cell) => {
+      cell.currentScore = 0;
+    });
   }
   getLandmassRegions() {
     const regions = [
@@ -1259,4 +1306,4 @@ class ContinentGenerator extends MapGenerator {
 }
 
 export { ContinentGenerator };
-//# sourceMappingURL=continent-generator.js.map
+//# sourceMappingURL=continent-generator-goggles.js.map

@@ -36,5 +36,13 @@
 		<Replace Tag="LOC_MAPSIZE_24_PLAYER_128_150_JEC_DESCRIPTION">
 			<Text>The Bodacious map is the bigest possible for epic, long-duration battles.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_MAP_CONTINENTS_JEC_NAME">
+			<Text>Goggle's Continents</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_12_PLAYER_128_80_JEC_DESCRIPTION">
+			<Text>An humungous map for epic, long-duration battles.</Text>
+		</Replace>
+		
 	</EnglishText>
 </Database>

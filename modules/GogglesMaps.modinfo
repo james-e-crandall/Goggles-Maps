@@ -45,6 +45,7 @@
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
+					<Item>text/en_us/ConfigText.xml</Item>
 				</UpdateText>
 				<ImportFiles>
 				</ImportFiles>
@@ -63,6 +64,7 @@
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
+					<Item>text/en_us/ConfigText.xml</Item>
 				</UpdateText>
 				<ImportFiles>
 				</ImportFiles>

@@ -1,15 +1,16 @@
-import { Voronoi } from '../../core/scripts/external/TypeScript-Voronoi-master/src/voronoi.js';
-import { sub2, dot2, div3s } from '../../core/scripts/MathHelpers.js';
-import { RandomImpl } from './random-pcg-32.js';
-import '../../core/scripts/external/TypeScript-Voronoi-master/src/rbtree.js';
-import '../../core/scripts/external/TypeScript-Voronoi-master/src/vertex.js';
-import '../../core/scripts/external/TypeScript-Voronoi-master/src/edge.js';
-import '../../core/scripts/external/TypeScript-Voronoi-master/src/cell.js';
-import '../../core/scripts/external/TypeScript-Voronoi-master/src/diagram.js';
-import '../../core/scripts/external/TypeScript-Voronoi-master/src/halfedge.js';
+import { Voronoi } from '/core/scripts/external/TypeScript-Voronoi-master/src/voronoi.js';
+import { sub2, div3s, div2s } from '/core/scripts/MathHelpers.js';
+import { RandomImpl } from '/base-standard/scripts/random-pcg-32.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/rbtree.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/vertex.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/edge.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/cell.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/diagram.js';
+import '/core/scripts/external/TypeScript-Voronoi-master/src/halfedge.js';
 
 class kdNode {
   data;
+  pos = { x: 0, y: 0 };
   left;
   right;
   constructor(data) {
@@ -40,15 +41,16 @@ class kdTree {
     const node = new kdNode(midItem);
     node.left = this.buildInternal(data.slice(0, midIndex), axis);
     node.right = this.buildInternal(data.slice(midIndex + 1), axis);
+    node.pos = this.getPos(midItem);
     return node;
   }
   searchInternal(node, pos, axis, best) {
     if (!node) return best;
-    const distSq = this.distSq(pos, this.getPos(node.data));
+    const distSq = this.distSq(pos, node.pos);
     if (best.distSq > distSq) {
       best = { data: node.data, distSq };
     }
-    const diff = axis === 0 ? pos.x - this.getPos(node.data).x : pos.y - this.getPos(node.data).y;
+    const diff = axis === 0 ? pos.x - node.pos.x : pos.y - node.pos.y;
     const nearChild = diff < 0 ? node.left : node.right;
     best = this.searchInternal(nearChild, pos, (axis + 1) % 2, best);
     if (diff * diff < best.distSq) {
@@ -59,7 +61,7 @@ class kdTree {
   }
   searchInternalMultiple(node, pos, axis, bestList, maxCount) {
     if (!node) return bestList;
-    const distSq = this.distSq(pos, this.getPos(node.data));
+    const distSq = this.distSq(pos, node.pos);
     if (bestList.length < maxCount) {
       bestList.push({ data: node.data, distSq });
     } else {
@@ -73,7 +75,7 @@ class kdTree {
         bestList[bestI] = { data: node.data, distSq };
       }
     }
-    const diff = axis === 0 ? pos.x - this.getPos(node.data).x : pos.y - this.getPos(node.data).y;
+    const diff = axis === 0 ? pos.x - node.pos.x : pos.y - node.pos.y;
     const nearChild = diff < 0 ? node.left : node.right;
     bestList = this.searchInternalMultiple(nearChild, pos, (axis + 1) % 2, bestList, maxCount);
     const axisDistSq = diff * diff;
@@ -93,7 +95,7 @@ class kdTree {
 class WrappedKdTree extends kdTree {
   bounds;
   wrapType;
-  constructor(getPos, bounds, wrapType) {
+  constructor(getPos, bounds = new Aabb2({ x: 0, y: 0 }, { x: 0, y: 0 }), wrapType = WrapType.None) {
     super(getPos);
     this.bounds = bounds;
     this.wrapType = wrapType;
@@ -104,14 +106,14 @@ class WrappedKdTree extends kdTree {
     const size = this.bounds.size();
     let nearest = this.searchInternal(this.rootNode, pos, 0, { data: this.rootNode.data, distSq: Infinity });
     if (nearest.distSq > signedNearest.x * signedNearest.x) {
-      const xWrappedTarget = { x: wrappedTarget.x + Math.sign(signedNearest.x) * size.x, y: wrappedTarget.y };
+      const xWrappedTarget = { x: wrappedTarget.x - Math.sign(signedNearest.x) * size.x, y: wrappedTarget.y };
       const xNearest = this.searchInternal(this.rootNode, xWrappedTarget, 0, nearest);
       if (xNearest.distSq < nearest.distSq) {
         nearest = xNearest;
       }
     }
     if (nearest.distSq > signedNearest.y * signedNearest.y) {
-      const yWrappedTarget = { x: wrappedTarget.x, y: wrappedTarget.y + Math.sign(signedNearest.y) * size.y };
+      const yWrappedTarget = { x: wrappedTarget.x, y: wrappedTarget.y - Math.sign(signedNearest.y) * size.y };
       const yNearest = this.searchInternal(this.rootNode, yWrappedTarget, 0, nearest);
       if (yNearest.distSq < nearest.distSq) {
         nearest = yNearest;
@@ -270,12 +272,12 @@ class Aabb2 {
     return sub2(this.max, this.min);
   }
   distSqToPoint(p) {
-    const d = { x: 0, y: 0 };
-    if (p.x < this.min.x) d.x = this.min.x - p.x;
-    else if (p.x >= this.max.x) d.x = p.x - this.max.x;
-    if (p.y < this.min.y) d.y = this.min.y - p.y;
-    else if (p.y >= this.max.y) d.y = p.y - this.max.y;
-    return dot2(d, d);
+    let x = 0, y = 0;
+    if (p.x < this.min.x) x = this.min.x - p.x;
+    else if (p.x >= this.max.x) x = p.x - this.max.x;
+    if (p.y < this.min.y) y = this.min.y - p.y;
+    else if (p.y >= this.max.y) y = p.y - this.max.y;
+    return x * x + y * y;
   }
   intersects(other) {
     return !(other.min.x >= this.max.x || other.max.x <= other.min.x || other.min.y >= this.max.y || other.max.y <= other.min.y);
@@ -347,26 +349,27 @@ var VoronoiUtils;
     return stringColors[idx % VoronoiUtils2.numericColors.length];
   }
   VoronoiUtils2.getRandStringColor = getRandStringColor;
-  function voronoiCentroid(cell) {
-    const site = { x: 0, y: 0, id: 0 };
+  function voronoiCellCentroid(cell) {
+    let area = 0;
+    const c = { x: 0, y: 0 };
     for (const halfedge of cell.halfedges) {
-      site.x += halfedge.getStartpoint().x;
-      site.y += halfedge.getStartpoint().y;
+      const p0 = halfedge.getStartpoint();
+      const p1 = halfedge.getEndpoint();
+      const cross = p0.x * p1.y - p0.y * p1.x;
+      area += cross;
+      c.x += (p0.x + p1.x) * cross;
+      c.y += (p0.y + p1.y) * cross;
     }
-    site.x /= cell.halfedges.length;
-    site.y /= cell.halfedges.length;
-    return site;
+    return div2s(c, 3 * area);
   }
-  VoronoiUtils2.voronoiCentroid = voronoiCentroid;
+  VoronoiUtils2.voronoiCellCentroid = voronoiCellCentroid;
   function lloydRelaxation(cells, strength) {
     return cells.map((cell) => {
-      const centerSite = voronoiCentroid(cell);
-      const newX = cell.site.x + strength * (centerSite.x - cell.site.x);
-      const newY = cell.site.y + strength * (centerSite.y - cell.site.y);
+      const centerSite = voronoiCellCentroid(cell);
       return {
         id: 0,
-        x: newX,
-        y: newY
+        x: cell.site.x + strength * (centerSite.x - cell.site.x),
+        y: cell.site.y + strength * (centerSite.y - cell.site.y)
       };
     });
   }
@@ -380,7 +383,7 @@ var VoronoiUtils;
     const width = bbox.xr - bbox.xl;
     const height = bbox.yb - bbox.yt;
     const density = Math.sqrt(sites.length / (width * height));
-    const wrapMargin = Math.min(density * 4, width);
+    const wrapMargin = Math.min(4 / density, width * 0.5);
     const createDiagram = (sites2) => {
       if (wrap == 1 /* WrapX */) {
         sites2 = sites2.filter((value) => value.x >= bbox.xl && value.x < bbox.xr);
@@ -407,7 +410,7 @@ var VoronoiUtils;
     };
     let diagram = createDiagram(sites);
     for (let index = 0; index < relaxationSteps; index++) {
-      sites = lloydRelaxation(diagram.cells, 1);
+      sites = lloydRelaxation(diagram.cells, 2);
       voronoi.toRecycle = diagram;
       diagram = createDiagram(sites);
     }
@@ -425,13 +428,13 @@ var VoronoiUtils;
           if (rInside) {
             if (edge.lSite != null) {
               const sitePos = { x: edge.lSite.x, y: edge.lSite.y };
-              sitePos.x += sitePos.x < bbox.xr ? wrapMargin : -wrapMargin;
+              sitePos.x += sitePos.x < bbox.xr ? width : -width;
               edge.lSite = cellKdTree.search(sitePos).data.site;
             }
           } else {
             if (edge.rSite != null) {
               const sitePos = { x: edge.rSite.x, y: edge.rSite.y };
-              sitePos.x += sitePos.x < bbox.xr ? wrapMargin : -wrapMargin;
+              sitePos.x += sitePos.x < bbox.xr ? width : -width;
               edge.rSite = cellKdTree.search(sitePos).data.site;
             }
           }
@@ -503,18 +506,35 @@ var VoronoiUtils;
     return area * -0.5;
   }
   VoronoiUtils2.calculateCellArea = calculateCellArea;
-  function sqDistance(pt1, pt2) {
-    const xDiff = pt1.x - pt2.x;
-    const yDiff = pt1.y - pt2.y;
+  function wrapDelta(d, P) {
+    d = Math.abs(d);
+    return d <= P - d ? d : P - d;
+  }
+  VoronoiUtils2.wrapDelta = wrapDelta;
+  function sqDistance(pt1, pt2, opts = { wrap: 0 /* None */ }) {
+    let xDiff = pt1.x - pt2.x;
+    let yDiff = pt1.y - pt2.y;
+    switch (opts.wrap) {
+      case 1 /* WrapX */:
+        xDiff = wrapDelta(xDiff, opts.width);
+        break;
+      case 2 /* WrapY */:
+        yDiff = wrapDelta(yDiff, opts.height);
+        break;
+      case 3 /* WrapXY */:
+        xDiff = wrapDelta(xDiff, opts.width);
+        yDiff = wrapDelta(yDiff, opts.height);
+        break;
+    }
     return xDiff * xDiff + yDiff * yDiff;
   }
   VoronoiUtils2.sqDistance = sqDistance;
-  function sqDistanceBetweenSites(site1, site2) {
-    return sqDistance({ x: site1.x, y: site1.y }, { x: site2.x, y: site2.y });
+  function sqDistanceBetweenSites(site1, site2, opts = { wrap: 0 /* None */ }) {
+    return sqDistance({ x: site1.x, y: site1.y }, { x: site2.x, y: site2.y }, opts);
   }
   VoronoiUtils2.sqDistanceBetweenSites = sqDistanceBetweenSites;
-  function distanceBetweenSites(site1, site2) {
-    return Math.sqrt(sqDistance({ x: site1.x, y: site1.y }, { x: site2.x, y: site2.y }));
+  function distanceBetweenSites(site1, site2, opts = { wrap: 0 /* None */ }) {
+    return Math.sqrt(sqDistance({ x: site1.x, y: site1.y }, { x: site2.x, y: site2.y }, opts));
   }
   VoronoiUtils2.distanceBetweenSites = distanceBetweenSites;
   function defaultEnumRecord(e) {
@@ -538,7 +558,7 @@ var VoronoiUtils;
     RegionCellFilterResult2[RegionCellFilterResult2["HaltSuccess"] = 1] = "HaltSuccess";
     RegionCellFilterResult2[RegionCellFilterResult2["HaltFail"] = 2] = "HaltFail";
   })(RegionCellFilterResult = VoronoiUtils2.RegionCellFilterResult || (VoronoiUtils2.RegionCellFilterResult = {}));
-  function regionCellAreaFilter(cell, regionCells, maxDistance, filterCallback) {
+  function regionCellAreaFilter(cell, regionCells, maxDistance, filterCallback, distOpts = { wrap: 0 /* None */ }) {
     const consideringList = [cell.id];
     cell.ruleConsideration = true;
     let filterResult = 0 /* Continue */;
@@ -551,7 +571,7 @@ var VoronoiUtils;
       const neighborIds = considerCell.cell.getNeighborIds();
       for (const neighborId of neighborIds) {
         const neighbor = regionCells[neighborId];
-        if (!neighbor.ruleConsideration && VoronoiUtils2.distanceBetweenSites(cell.cell.site, neighbor.cell.site) < maxDistance) {
+        if (!neighbor.ruleConsideration && VoronoiUtils2.distanceBetweenSites(cell.cell.site, neighbor.cell.site, distOpts) < maxDistance) {
           neighbor.ruleConsideration = true;
           consideringList.push(neighborId);
         }
@@ -627,7 +647,7 @@ var VoronoiUtils;
   function loadSettingsFromJson(json, map) {
     const configObject = typeof json === "string" ? JSON.parse(json) : json;
     VoronoiUtils2.deepMerge(map.getSettings(), configObject.mapConfig);
-    const generator = map.getBuilder().getGenerator();
+    const generator = map.getGenerator();
     generator.resetToDefault();
     VoronoiUtils2.deepMerge(generator.getSettings(), configObject.generatorConfig);
     const rules = generator.getRules();
@@ -639,6 +659,8 @@ var VoronoiUtils;
           if (rule.name === ruleKeyParts[0]) {
             if (ruleKeyParts[1] === "weight") {
               rule.weight = ruleValue;
+            } else if (ruleKeyParts[1] === "isActive") {
+              rule.isActive = ruleValue;
             } else {
               rule.configValues[ruleKeyParts[1]] = ruleValue;
             }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		
+		<Row Tag="LOC_MAP_CONTINENTS_JEC_NAME">
+			<Text>Goggle's Maps - Continents and Islands</Text>
+		</Row>
+		<Row Tag="LOC_MAP_CONTINENTS_JEC_DESCRIPTION">
+			<Text>Two natural landmasses accompanied by islands of varying size.</Text>
+		</Row>
+		
+	</EnglishText>
+</Database>

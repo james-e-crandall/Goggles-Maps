@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<Maps>
+		<!-- <Row File="{goggles-maps}maps/fractal-ynamp.js" Name="LOC_MAP_FRACTAL_YNAMP_NAME" Description="LOC_MAP_CONTINENTS_YNAMP_DESCRIPTION" SortIndex="210"/> -->
+
+		<Row File="{goggles-maps}maps/continents-voronoi-goggles.js" Name="LOC_MAP_CONTINENTS_JEC_NAME" Description="LOC_MAP_CONTINENTS_JEC_DESCRIPTION" SortIndex="900"/>
 	</Maps>
 	<MapSizes>
 		<!-- Standard MapSize Domain - For ages where civs on both landmasses can win victories. -->
@@ -20,12 +23,27 @@
 		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Name="LOC_MAPSIZE_24_PLAYER_128_150_JEC_NAME" Description="LOC_MAPSIZE_24_PLAYER_128_150_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="24" MaxHumans="16" DefaultPlayers="24" SortIndex="200"/>
 
 	</MapSizes>
+	<SupportedValuesByMap>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapStartPositions" Value="START_POSITION_STANDARD" />
+
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_12_PLAYER_128_80_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_12_PLAYER_128_80_JEC" 		/>
+
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_15_PLAYER_128_90_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_15_PLAYER_128_90_JEC" 		/>
+
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_18_PLAYER_128_100_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_18_PLAYER_128_100_JEC" 		/>
+
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_21_PLAYER_128_120_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_21_PLAYER_128_120_JEC" 		/>
+
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_24_PLAYER_128_150_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_24_PLAYER_128_150_JEC" 		/>
+	</SupportedValuesByMap>
+
 	<Parameters>
 
 	</Parameters>
-	
-	<SupportedValuesByMap>
 
-
-	</SupportedValuesByMap>
 </Database>
