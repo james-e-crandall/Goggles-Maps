@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+
+		<Replace Tag="LOC_MOD_JEC_MAP_SITE_SETTLEMENT_CAP_INCREASE_DESCRIPTION">
+			<Text>+1 [icon:SETTLEMENT_LIMIT] Settlement Limit.</Text>
+		</Replace>
+
+		
+	</EnglishText>
+</Database>

@@ -1,6 +1,7 @@
 import { assignAdvancedStartRegions } from '/base-standard/maps/assign-advanced-start-region.js';
 import { PlayerRegion, assignStartPositionsFromTiles } from '/base-standard/maps/assign-starting-plots.js';
-import { generateDiscoveries } from '/base-standard/maps/discovery-generator.js';
+// import { generateDiscoveries } from '/base-standard/maps/discovery-generator.js';
+import { generateDiscoveries } from '/goggles-maps/maps/discovery-generator-goggles.js';
 import { generateLakes, addHills, buildRainfallMap } from '/base-standard/maps/elevation-terrain-generator.js';
 import { designateBiomes, addFeatures } from '/base-standard/maps/feature-biome-generator.js';
 import { dumpContinents, dumpTerrain, dumpElevation, dumpRainfall, dumpBiomes, dumpFeatures, dumpResources } from '/base-standard/maps/map-debug-helpers.js';
@@ -59,7 +60,9 @@ async function generateMap() {
     console.log("Generating a map!");
     console.log(`Age - ${GameInfo.Ages.lookup(Game.age).AgeType}`);
     const iWidth = GameplayMap.getGridWidth();
+    console.log(`iWidth  - ${iWidth}`);
     const iHeight = GameplayMap.getGridHeight();
+    console.log(`iHeight  - ${iHeight}`);
     const uiMapSize = GameplayMap.getMapSize();
     const mapInfo = GameInfo.Maps.lookup(uiMapSize);
     if (mapInfo == null) return;
