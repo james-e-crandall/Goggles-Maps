@@ -2,7 +2,6 @@
 <Mod id="goggles-maps" version="1"
 	xmlns="ModInfo">
 	<!-- Atributions: 
-		<Value>MAPSIZE_12_PLAYER_128_80_JEC,MAPSIZE_15_PLAYER_128_90_JEC,MAPSIZE_18_PLAYER_128_100_JEC,MAPSIZE_21_PLAYER_128_120_JEC,MAPSIZE_24_PLAYER_128_150_JEC</Value>		
 	-->
 	<Properties>
 		<Name>LOC_MODULE_GOGGLES_MAPS_NAME</Name>
@@ -52,6 +51,27 @@
 				<Value>MAPSIZE_15_PLAYER_128_90_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
+		<Criteria id="MAPSIZE_18_PLAYER_128_100_JEC">
+			<ConfigurationValueMatches>
+				<Group>Map</Group>
+				<ConfigurationId>SizeType</ConfigurationId>
+				<Value>MAPSIZE_18_PLAYER_128_100_JEC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="MAPSIZE_21_PLAYER_128_120_JEC">
+			<ConfigurationValueMatches>
+				<Group>Map</Group>
+				<ConfigurationId>SizeType</ConfigurationId>
+				<Value>MAPSIZE_21_PLAYER_128_120_JEC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="MAPSIZE_24_PLAYER_128_150_JEC">
+			<ConfigurationValueMatches>
+				<Group>Map</Group>
+				<ConfigurationId>SizeType</ConfigurationId>
+				<Value>MAPSIZE_24_PLAYER_128_150_JEC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
 		<ActionGroup id="goggles-maps-always" scope="game" criteria="always">
@@ -87,6 +107,30 @@
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
 					<Item>data/victories02.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_18_PLAYER_128_100_JEC">
+			<Actions>
+				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
+					<Item>data/victories03.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_21_PLAYER_128_120_JEC">
+			<Actions>
+				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
+					<Item>data/victories04.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_24_PLAYER_128_150_JEC">
+			<Actions>
+				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
+					<Item>data/victories05.sql</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>

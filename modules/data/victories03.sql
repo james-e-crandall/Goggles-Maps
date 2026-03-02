@@ -10,16 +10,6 @@
 -- UPDATE RequirementArguments
 -- SET Value = Value * 2;
 
--- SELECT "_rowid_",* FROM "main"."GameSpeed_Durations" LIMIT 49999 OFFSET 0;
-
--- SELECT "_rowid_",* FROM "main"."GameSpeed_Scalings" LIMIT 49999 OFFSET 0;
-
---SELECT "_rowid_",* FROM "main"."GameSpeed_Turns" LIMIT 49999 OFFSET 0;
-
---SELECT "_rowid_",* FROM "main"."ProgressionTreeNodes" WHERE "ProgressionTree" LIKE '%TREE_CIVICS_AQ_MAIN%' ESCAPE '\' AND "ProgressionTreeNodeType" LIKE '%NODE_CIVIC_AQ_MAIN_CHIEFDOM%' ESCAPE '\' LIMIT 49999 OFFSET 0;
-
-
---SELECT ProgressionTreeNodeType FROM ProgressionTreeNodes WHERE ProgressionTree LIKE '%TREE_CIVICS_AQ_MAIN%'
 
 -- AGE_PROGRESSION_PLAYER_MILESTONE_1
 -- AGE_PROGRESSION_PLAYER_MILESTONE_2
@@ -27,17 +17,17 @@
 
 
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 3)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 3)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 3)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_3'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 
