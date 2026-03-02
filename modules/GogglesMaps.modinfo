@@ -2,7 +2,7 @@
 <Mod id="goggles-maps" version="1"
 	xmlns="ModInfo">
 	<!-- Atributions: 
-
+		<Value>MAPSIZE_12_PLAYER_128_80_JEC,MAPSIZE_15_PLAYER_128_90_JEC,MAPSIZE_18_PLAYER_128_100_JEC,MAPSIZE_21_PLAYER_128_120_JEC,MAPSIZE_24_PLAYER_128_150_JEC</Value>		
 	-->
 	<Properties>
 		<Name>LOC_MODULE_GOGGLES_MAPS_NAME</Name>
@@ -35,13 +35,22 @@
 		<Criteria id="always">
 			<AlwaysMet></AlwaysMet>
 		</Criteria>
-		<Criteria id="goggles-maps-size">
-			<!-- <ConfigurationValueMatches>
+		<Criteria id="goggles-map-in-use">
+			<MapInUse>{goggles-maps}maps/continents-voronoi-goggles.js</MapInUse>
+		</Criteria>
+		<Criteria id="MAPSIZE_12_PLAYER_128_80_JEC">
+			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_12_PLAYER_128_80_JEC,MAPSIZE_15_PLAYER_128_90_JEC,MAPSIZE_18_PLAYER_128_100_JEC,MAPSIZE_21_PLAYER_128_120_JEC,MAPSIZE_24_PLAYER_128_150_JEC</Value>
-			</ConfigurationValueMatches> -->
-			<MapInUse>{goggles-maps}maps/continents-voronoi-goggles.js</MapInUse>
+				<Value>MAPSIZE_12_PLAYER_128_80_JEC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="MAPSIZE_15_PLAYER_128_90_JEC">
+			<ConfigurationValueMatches>
+				<Group>Map</Group>
+				<ConfigurationId>SizeType</ConfigurationId>
+				<Value>MAPSIZE_15_PLAYER_128_90_JEC</Value>
+			</ConfigurationValueMatches>
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
@@ -54,32 +63,31 @@
 					<Item>text/en_us/MapText.xml</Item>
 					<Item>text/en_us/ConfigText.xml</Item>
 				</UpdateText>
-				<ImportFiles>
-				</ImportFiles>
-				<UpdateIcons>
-				</UpdateIcons>
-				<ScenarioScripts>
-				</ScenarioScripts>
-				<MapGenScripts>
-				</MapGenScripts>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-SizeType" scope="game" criteria="goggles-maps-size">
+		<ActionGroup id="goggles-maps-map-in-use" scope="game" criteria="goggles-map-in-use">
 			<Actions>
 				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
 					<Item>data/victories.xml</Item>
 					<Item>data/discovery-stories.sql</Item>
 				</UpdateDatabase>
-				<UpdateText>
-				</UpdateText>
-				<ImportFiles>
-				</ImportFiles>
-				<UpdateIcons>
-				</UpdateIcons>
-				<ScenarioScripts>
-				</ScenarioScripts>
-				<MapGenScripts>
-				</MapGenScripts>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_12_PLAYER_128_80_JEC">
+			<Actions>
+				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
+					<Item>data/victories01.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_15_PLAYER_128_90_JEC">
+			<Actions>
+				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
+					<Item>data/victories02.sql</Item>
+				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="shell-goggles-maps" scope="shell" criteria="always">
