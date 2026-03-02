@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
 <Database>
-	<AgeProgressionEventMapSizeOverrides>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_12_PLAYER_128_80_JEC" Points="12"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_15_PLAYER_128_90_JEC" Points="9"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_18_PLAYER_128_100_JEC" Points="6"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_21_PLAYER_128_120_JEC" Points="3"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Points="1"/>
-	</AgeProgressionEventMapSizeOverrides>
+	<Types>
+		<Row Type="ANTIQUITY_SCIENCE_MILESTONE_0" Kind="KIND_AGE_PROGRESSION_MILESTONE"/>
+		<Row Type="ANTIQUITY_MILITARY_MILESTONE_0" Kind="KIND_AGE_PROGRESSION_MILESTONE"/>
+		<Row Type="ANTIQUITY_CULTURE_MILESTONE_0" Kind="KIND_AGE_PROGRESSION_MILESTONE"/>
+		<Row Type="ANTIQUITY_ECONOMIC_MILESTONE_0" Kind="KIND_AGE_PROGRESSION_MILESTONE"/>
+	</Types>
+	<AgeProgressionEvents>
+		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_0" Points="3" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
+	</AgeProgressionEvents>
 
-	<!-- <AgeProgressionEvents>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_1" Points="5" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_2" Points="5" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_3" Points="10" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_FUTURE_CIVIC" Points="10" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_FUTURE_TECH" Points="10" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
-		<Row AgeProgressionEventType="AGE_PROGRESSION_PLAYER_ELIMINATED" Points="25" AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER"/>
-	</AgeProgressionEvents> -->
+	<AgeProgressionMilestones>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_SCIENCE_MILESTONE_0" LegacyPathType="LEGACY_PATH_ANTIQUITY_SCIENCE" RequiredPathPoints="3" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_0"/>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_CULTURE_MILESTONE_0" LegacyPathType="LEGACY_PATH_ANTIQUITY_CULTURE" RequiredPathPoints="2" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_0"/>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_ECONOMIC_MILESTONE_0" LegacyPathType="LEGACY_PATH_ANTIQUITY_ECONOMIC" RequiredPathPoints="7" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_0"/>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_MILITARY_MILESTONE_0" LegacyPathType="LEGACY_PATH_ANTIQUITY_MILITARY" RequiredPathPoints="6" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_0"/>
+	</AgeProgressionMilestones>
+	<AgeProgressionRewards>
+		<!-- Antiquity -->
+		<Row AgeProgressionRewardType="AGE_REWARD_MILESTONE1_SCIENCE_0" ModifierId="MOD_AQ_SETTLEMENT_CAP_INCREASE" Name="LOC_LEGACY_PATH_ATTRIBUTE_SCIENCE_REWARD_TEXT" Description="LOC_MOD_AQ_SETTLEMENT_CAP_INCREASE_DESCRIPTION" icon="ATTRIBUTE_SCIENTIFIC" />
+		<Row AgeProgressionRewardType="AGE_REWARD_MILESTONE1_CULTURE_0" ModifierId="MOD_AQ_SETTLEMENT_CAP_INCREASE" Name="LOC_LEGACY_PATH_ATTRIBUTE_CULTURE_REWARD_TEXT" Description="LOC_MOD_AQ_SETTLEMENT_CAP_INCREASE_DESCRIPTION" icon="ATTRIBUTE_CULTURAL" />
+		<Row AgeProgressionRewardType="AGE_REWARD_MILESTONE1_ECONOMIC_0" ModifierId="MOD_AQ_SETTLEMENT_CAP_INCREASE" Name="LOC_LEGACY_PATH_ATTRIBUTE_ECONOMIC_REWARD_TEXT" Description="LOC_MOD_AQ_SETTLEMENT_CAP_INCREASE_DESCRIPTION" icon="ATTRIBUTE_ECONOMIC" />
+		<Row AgeProgressionRewardType="AGE_REWARD_MILESTONE1_MILITARY_0" ModifierId="MOD_AGE_REWARD_MILESTONE1_MILITARY_0" Name="LOC_LEGACY_PATH_ATTRIBUTE_MILITARY_REWARD_TEXT" Description="LOC_LEGACY_PATH_ATTRIBUTE_MILITARY_DESCRIPTION" icon="ATTRIBUTE_MILITARISTIC" />
+	</AgeProgressionRewards>
 
-	<!-- <AgeProgressions>
-		<Row AgeProgressionType="AGE_PROGRESSION_ANTIQUITY_AGE_TIMER" AgeType="AGE_ANTIQUITY" EndsAge="true" MaxPoints_Abbreviated="240" MaxPoints_Standard="300" MaxPoints_Long="360"/>
-	</AgeProgressions> -->
-
-	<!-- <AgeProgressionMilestones>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_SCIENCE_MILESTONE_1" LegacyPathType="LEGACY_PATH_ANTIQUITY_SCIENCE" RequiredPathPoints="6" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_1"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_SCIENCE_MILESTONE_2" LegacyPathType="LEGACY_PATH_ANTIQUITY_SCIENCE" RequiredPathPoints="12" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_2"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_SCIENCE_MILESTONE_3" LegacyPathType="LEGACY_PATH_ANTIQUITY_SCIENCE" RequiredPathPoints="20" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_3" FinalMilestone="true"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_MILITARY_MILESTONE_1" LegacyPathType="LEGACY_PATH_ANTIQUITY_MILITARY" RequiredPathPoints="12" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_1"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_MILITARY_MILESTONE_2" LegacyPathType="LEGACY_PATH_ANTIQUITY_MILITARY" RequiredPathPoints="18" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_2"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_MILITARY_MILESTONE_3" LegacyPathType="LEGACY_PATH_ANTIQUITY_MILITARY" RequiredPathPoints="24" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_3" FinalMilestone="true"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_CULTURE_MILESTONE_1" LegacyPathType="LEGACY_PATH_ANTIQUITY_CULTURE" RequiredPathPoints="4" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_1"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_CULTURE_MILESTONE_2" LegacyPathType="LEGACY_PATH_ANTIQUITY_CULTURE" RequiredPathPoints="8" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_2"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_CULTURE_MILESTONE_3" LegacyPathType="LEGACY_PATH_ANTIQUITY_CULTURE" RequiredPathPoints="14" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_3" FinalMilestone="true"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_ECONOMIC_MILESTONE_1" LegacyPathType="LEGACY_PATH_ANTIQUITY_ECONOMIC" RequiredPathPoints="14" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_1"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_ECONOMIC_MILESTONE_2" LegacyPathType="LEGACY_PATH_ANTIQUITY_ECONOMIC" RequiredPathPoints="28" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_2"/>
-		<Row AgeProgressionMilestoneType="ANTIQUITY_ECONOMIC_MILESTONE_3" LegacyPathType="LEGACY_PATH_ANTIQUITY_ECONOMIC" RequiredPathPoints="40" AgeProgressionEventType="AGE_PROGRESSION_PLAYER_MILESTONE_3" FinalMilestone="true"/>
-	</AgeProgressionMilestones> -->
-
-
+	<AgeProgressionMilestoneRewards>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_SCIENCE_MILESTONE_0" AgeProgressionRewardType="AGE_REWARD_MILESTONE1_SCIENCE_0" IsImmediate="true"/>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_CULTURE_MILESTONE_0" AgeProgressionRewardType="AGE_REWARD_MILESTONE1_CULTURE_0" IsImmediate="true"/>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_ECONOMIC_MILESTONE_0" AgeProgressionRewardType="AGE_REWARD_MILESTONE1_ECONOMIC_0" IsImmediate="true"/>
+		<Row AgeProgressionMilestoneType="ANTIQUITY_MILITARY_MILESTONE_0" AgeProgressionRewardType="AGE_REWARD_MILESTONE1_MILITARY_0" IsImmediate="true"/>
+	</AgeProgressionMilestoneRewards>
 </Database>

@@ -1,20 +1,11 @@
--- UPDATE AgeProgressions
--- SET MaxPoints_Abbreviated = MaxPoints_Abbreviated * 2;
+UPDATE AgeProgressions
+SET MaxPoints_Abbreviated = (MaxPoints_Abbreviated + 80);
 
--- UPDATE AgeProgressions
--- SET MaxPoints_Standard = MaxPoints_Standard * 2;
+UPDATE AgeProgressions
+SET MaxPoints_Standard = (MaxPoints_Standard + 80);
 
--- UPDATE AgeProgressions
--- SET MaxPoints_Long = MaxPoints_Long * 2;
-
--- UPDATE RequirementArguments
--- SET Value = Value * 2;
-
-
--- AGE_PROGRESSION_PLAYER_MILESTONE_1
--- AGE_PROGRESSION_PLAYER_MILESTONE_2
--- AGE_PROGRESSION_PLAYER_MILESTONE_3
-
+UPDATE AgeProgressions
+SET MaxPoints_Long = (MaxPoints_Long + 80);
 
 UPDATE AgeProgressionMilestones
 SET RequiredPathPoints = (RequiredPathPoints + 4)
