@@ -1,0 +1,29 @@
+<Database>
+	<EnglishText>
+		<!-- 1a reward -->
+		<InsertOrIgnore Tag="LOC_LEGACY_IMEDIATE_OPTION">
+			<Text> [B]Immediate reward[/B]:</Text>
+		</InsertOrIgnore>
+
+		<Row Tag="LOC_LEGACY_PATH_SETTLEMENT_CAP_INCREASE_REWARD_TEXT">
+			<Text>{LOC_LEGACY_IMEDIATE_OPTION}</Text>
+		</Row>
+
+		<Row Tag="LOC_MOD_AGE_REWARD_MILESTONE_ADJUST_TOWN_UPGRADE_DISCOUNT_TEXT">
+			<Text> [B]Immediate reward[/B]:</Text>
+		</Row>
+		<Row Tag="LOC_MOD_AGE_REWARD_MILESTONE_ADJUST_TOWN_UPGRADE_DISCOUNT_DESCRIPTION">
+			<Text>+50% [icon:YIELD_GOLD] Gold towards converting a captured [icon:YIELD_TOWNS] [TIP:LOC_PEDIA_CONCEPTS_TOWN_TOOLTIP]Town[/TIP] to a [icon:YIELD_CITIES] [TIP:LOC_PEDIA_CONCEPTS_CITIES_TOOLTIP]City[/TIP].</Text>
+		</Row>
+
+		<!-- 2a reward -->
+		<Row Tag="LOC_LEGACY_PATH_ADJUST_FAVORED_WONDER_PRODUCTION_REWARD_TEXT">
+			<Text>{LOC_LEGACY_IMEDIATE_OPTION}</Text>
+		</Row>
+
+		<Row Tag="LOC_LEGACY_PATH_ADJUST_FAVORED_WONDER_PRODUCTION_REWARD_DESCRIPTION">
+			<Text>+50% [icon:YIELD_PRODUCTION] Production towards constructing [icon:WONDER] [TIP:LOC_PEDIA_CONCEPTS_WONDERS_TOOLTIP]Wonders when constructed in [icon:YIELD_CITIES] [TIP:LOC_PEDIA_CONCEPTS_CITIES_TOOLTIP]Cities[/TIP] captured citied.</Text>
+		</Row>
+
+	</EnglishText>
+</Database>
