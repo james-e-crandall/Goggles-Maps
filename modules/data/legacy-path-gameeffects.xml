@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameEffects xmlns="GameEffects">
-	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_TRADE_ROUTE_RANGE" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_TRADE_ROUTE_RANGE">
+
+
+	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_TOWN_UPGRADE_DISCOUNT_JEC" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_TOWN_UPGRADE_DISCOUNT">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_CITY_IS_ORIGINAL_OWNER" inverse="true"/>
+		</SubjectRequirements>
+		<Argument name="Percent">50</Argument>
+	</Modifier>
+
+	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_WONDER_PRODUCTION_CAPTURE_CITIES_JEC" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_WONDER_PRODUCTION">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_CITY_IS_ORIGINAL_OWNER" inverse="true"/>
+		</SubjectRequirements>
+		<Argument name="Percent">50</Argument>
+	</Modifier>
+
+	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_WONDER_PRODUCTION_JEC" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_WONDER_PRODUCTION">
+		<Argument name="Percent">25</Argument>
+	</Modifier>
+
+	<Modifier id="MOD_AGE_REWARD_MILESTONE_SETTLEMENT_CAP_INCREASE_JEC" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_ADJUST_SETTLEMENT_CAP" permanent="true">
+		<Argument name="Amount">2</Argument>
+		<String context="Description">LOC_MOD_AGE_REWARD_MILESTONE_SETTLEMENT_CAP_INCREASE_JEC_DESCRIPTION</String>
+	</Modifier>
+
+	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_TRADE_ROUTE_RANGE_JEC" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_TRADE_ROUTE_RANGE">
 		<Argument name="Amount">10</Argument>
 		<Argument name="DomainType">DOMAIN_LAND</Argument>
-	</Modifier>
-
-	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_TOWN_UPGRADE_DISCOUNT" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_TOWN_UPGRADE_DISCOUNT">
-		<SubjectRequirements>
-			<Requirement type="REQUIREMENT_CITY_IS_ORIGINAL_OWNER" inverse="true"/>
-		</SubjectRequirements>
-		<Argument name="Percent">50</Argument>
-	</Modifier>
-
-	<Modifier id="MOD_AGE_REWARD_MILESTONE_ADJUST_WONDER_PRODUCTION" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_WONDER_PRODUCTION">
-		<SubjectRequirements>
-		<SubjectRequirements>
-			<Requirement type="REQUIREMENT_CITY_IS_ORIGINAL_OWNER" inverse="true"/>
-		</SubjectRequirements>
-		</SubjectRequirements>
-		<Argument name="Percent">50</Argument>
 	</Modifier>
 
 </GameEffects>
