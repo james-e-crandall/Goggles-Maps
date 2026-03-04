@@ -91,7 +91,7 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
-					<Item>data/victories.xml</Item>
+					<Item>data/victories-antiquity-a.xml</Item>
 					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/discovery-stories.sql</Item>
 				</UpdateDatabase>
@@ -102,6 +102,8 @@
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
 					<Item>data/victories01.sql</Item>
+					<Item>data/constructibles.xml</Item>
+					<Item>data/progression-trees-tech.xml</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
@@ -117,24 +119,36 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories03.sql</Item>
 				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/ConstructibleText.xml</Item>
+				</UpdateText>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_21_PLAYER_128_120_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories04.sql</Item>
 				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/ConstructibleText.xml</Item>
+				</UpdateText>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_24_PLAYER_128_150_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories05.sql</Item>
 				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/ConstructibleText.xml</Item>
+				</UpdateText>
 			</Actions>
 		</ActionGroup>
 		<ActionGroup id="shell-goggles-maps" scope="shell" criteria="always">

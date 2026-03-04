@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+
+		<Row Tag="LOC_WONDER_PYRAMIDS_NAME">
+			<Text>Pyramids</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_PYRAMIDS_DESCRIPTION">
+			<Text>+1 [icon:YIELD_GOLD] Gold and [icon:YIELD_PRODUCTION] Production on [icon:CITY_RURAL] [TIP:LOC_PEDIA_CONCEPTS_IMPROVEMENT_TOOLTIP]Improvements[/TIP] and [icon:CITY_URBAN] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Districts[/TIP] on [TIP:LOC_PEDIA_CONCEPTS_MINOR_RIVER_TOOLTIP]Minor River[/TIP] and [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] tiles in this [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlement[/TIP]. [TIP:LOC_PEDIA_CONCEPTS_AGELESS_TOOLTIP]Ageless[/TIP]. Must be placed adjacent to a [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] not in Tundra.</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_PYRAMIDS_TOOLTIP">
+			<Text>+1 [icon:YIELD_GOLD] Gold and [icon:YIELD_PRODUCTION] Production on [icon:CITY_RURAL] [TIP:LOC_PEDIA_CONCEPTS_IMPROVEMENT_TOOLTIP]Improvements[/TIP] and [icon:CITY_URBAN] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Districts[/TIP] on [TIP:LOC_PEDIA_CONCEPTS_MINOR_RIVER_TOOLTIP]Minor River[/TIP] and [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] tiles in this [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlement[/TIP].[n]Must be placed adjacent to a [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] not in Tundra.</Text>
+		</Row>
+
+	</EnglishText>
+</Database>

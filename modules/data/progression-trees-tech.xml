@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <ProgressionTreeNodeUnlocks>
+        <!-- BIOME_DESERT -->
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_CURRENCY" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_STEP_PYRAMID" UnlockDepth="2"/>
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_NAVIGATION" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_ZIGGURAT" UnlockDepth="2"/>
+        <!-- BIOME_GRASSLAND -->
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_MASONRY" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_ASTRONOMICAL_DEVICE" UnlockDepth="2"/>
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_WHEEL" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_TELL" UnlockDepth="2"/>
+        <!-- BIOME_PLAINS -->	
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_MASONRY" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_MOUND" UnlockDepth="2"/>
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_WHEEL" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_TERRACES" UnlockDepth="2"/>
+        <!-- BIOME_TROPICAL -->
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_IRRIGATION" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_CLIFF_FACE" UnlockDepth="2"/>
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_BRONZE_WORKING" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_TROPAION" UnlockDepth="2"/>
+        <!-- BIOME_TUNDRA -->
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_IRRIGATION" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_GREAT_DOLMEN" UnlockDepth="2"/>
+        <Row ProgressionTreeNodeType="NODE_TECH_AQ_BRONZE_WORKING" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_PASSAGE_GRAVE" UnlockDepth="2"/>
+    </ProgressionTreeNodeUnlocks>
+</Database>
