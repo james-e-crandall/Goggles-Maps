@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<EnglishText>
+		<!-- BIOME_DESERT -->
+		<Row Tag="LOC_WONDER_STEP_PYRAMID_JEC_NAME">
+			<Text>Step Pyramid</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_ZIGGURAT_JEC_NAME">
+			<Text>Ziggurate</Text>
+		</Row>
 
-		<Row Tag="LOC_WONDER_PYRAMIDS_NAME">
-			<Text>Pyramids</Text>
+		<!-- BIOME_GRASSLAND -->
+		<Row Tag="LOC_WONDER_ASTRONOMICAL_DEVICE_JEC_NAME">
+			<Text>Astronomical Device</Text>
 		</Row>
-		<Row Tag="LOC_WONDER_PYRAMIDS_DESCRIPTION">
-			<Text>+1 [icon:YIELD_GOLD] Gold and [icon:YIELD_PRODUCTION] Production on [icon:CITY_RURAL] [TIP:LOC_PEDIA_CONCEPTS_IMPROVEMENT_TOOLTIP]Improvements[/TIP] and [icon:CITY_URBAN] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Districts[/TIP] on [TIP:LOC_PEDIA_CONCEPTS_MINOR_RIVER_TOOLTIP]Minor River[/TIP] and [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] tiles in this [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlement[/TIP]. [TIP:LOC_PEDIA_CONCEPTS_AGELESS_TOOLTIP]Ageless[/TIP]. Must be placed adjacent to a [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] not in Tundra.</Text>
+		<Row Tag="LOC_WONDER_TELL_JEC_NAME">
+			<Text>Tell</Text>
 		</Row>
-		<Row Tag="LOC_WONDER_PYRAMIDS_TOOLTIP">
-			<Text>+1 [icon:YIELD_GOLD] Gold and [icon:YIELD_PRODUCTION] Production on [icon:CITY_RURAL] [TIP:LOC_PEDIA_CONCEPTS_IMPROVEMENT_TOOLTIP]Improvements[/TIP] and [icon:CITY_URBAN] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Districts[/TIP] on [TIP:LOC_PEDIA_CONCEPTS_MINOR_RIVER_TOOLTIP]Minor River[/TIP] and [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] tiles in this [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlement[/TIP].[n]Must be placed adjacent to a [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] not in Tundra.</Text>
+
+		<!-- BIOME_PLAINS -->
+		<Row Tag="LOC_WONDER_MOUND_JEC_NAME">
+			<Text>Mound</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_TROPAION_JEC_NAME">
+			<Text>Tropaion</Text>
+		</Row>
+		
+		<!-- BIOME_TROPICAL -->
+		<Row Tag="LOC_WONDER_CLIFF_FACE_JEC_NAME">
+			<Text>Cliff Face</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_TERRACES_JEC_NAME">
+			<Text>Terraces</Text>
+		</Row>
+
+		<!-- BIOME_TUNDRA -->
+		<Row Tag="LOC_WONDER_GREAT_DOLMEN_JEC_NAME">
+			<Text>Great Dolment</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_PASSAGE_GRAVE_JEC_NAME">
+			<Text>Passage Grave</Text>
+		</Row>
+
+		<Row Tag="LOC_WONDER_GENERIC_JEC_DESCRIPTION">
+			<Text>+1 [icon:YIELD_GOLD] Gold and [icon:YIELD_PRODUCTION] Production on [icon:CITY_RURAL] [TIP:LOC_PEDIA_CONCEPTS_IMPROVEMENT_TOOLTIP]Improvements[/TIP] and [icon:CITY_URBAN] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Districts[/TIP] on [TIP:LOC_PEDIA_CONCEPTS_MINOR_RIVER_TOOLTIP]Minor River[/TIP] and [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] tiles in this [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlement[/TIP]. [TIP:LOC_PEDIA_CONCEPTS_AGELESS_TOOLTIP]Ageless[/TIP]. Must be placed adjacent to a [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP].</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_GENERIC_JEC_TOOLTIP">
+			<Text>+1 [icon:YIELD_GOLD] Gold and [icon:YIELD_PRODUCTION] Production on [icon:CITY_RURAL] [TIP:LOC_PEDIA_CONCEPTS_IMPROVEMENT_TOOLTIP]Improvements[/TIP] and [icon:CITY_URBAN] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Districts[/TIP] on [TIP:LOC_PEDIA_CONCEPTS_MINOR_RIVER_TOOLTIP]Minor River[/TIP] and [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP] tiles in this [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlement[/TIP].[n]Must be placed adjacent to a [TIP:LOC_PEDIA_CONCEPTS_NAVIGABLE_RIVER_TOOLTIP]Navigable River[/TIP].</Text>
 		</Row>
 
 	</EnglishText>

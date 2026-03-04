@@ -1,144 +1,140 @@
 <Database>
-
-
 	<Types>
+		<Row Type="WONDER_ASTRONOMICAL_DEVICE_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 
-		
-		<Row Type="WONDER_ASTRONOMICAL_DEVICE" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_CLIFF_FACE_JEC" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_GREAT_DOLMEN_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 
-		<Row Type="WONDER_CLIFF_FACE" Kind="KIND_CONSTRUCTIBLE"/>
-		<Row Type="WONDER_GREAT_DOLMEN" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_MOUND_JEC" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_PASSAGE_GRAVE_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 
-		<Row Type="WONDER_MOUND" Kind="KIND_CONSTRUCTIBLE"/>
-		<Row Type="WONDER_PASSAGE_GRAVE" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_STEP_PYRAMID_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 
-		<Row Type="WONDER_STEP_PYRAMID" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_TELL_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 
-		<Row Type="WONDER_TELL" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_TERRACES_JEC" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_TROPAION_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 
-		<Row Type="WONDER_TERRACES" Kind="KIND_CONSTRUCTIBLE"/>
-		<Row Type="WONDER_TROPAION" Kind="KIND_CONSTRUCTIBLE"/>
-
-		<Row Type="WONDER_ZIGGURAT" Kind="KIND_CONSTRUCTIBLE"/>
+		<Row Type="WONDER_ZIGGURAT_JEC" Kind="KIND_CONSTRUCTIBLE"/>
 	</Types>
 
 	<TypeQuotes>
-		<Row Type="WONDER_ASTRONOMICAL_DEVICE" Quote="LOC_QUOTE_WONDER_ASTRONOMICAL_DEVICE" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_ASTRONOMICAL_DEVICE" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_ASTRONOMICAL_DEVICE_JEC" Quote="LOC_QUOTE_WONDER_ASTRONOMICAL_DEVICE_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_ASTRONOMICAL_DEVICE_JEC" QuoteAudio="VO_Quote_Pyramids"/>
 		
-		<Row Type="WONDER_CLIFF_FACE" Quote="LOC_QUOTE_WONDER_CLIFF_FACE" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_CLIFF_FACE" QuoteAudio="VO_Quote_Pyramids"/>
-		<Row Type="WONDER_GREAT_DOLMEN" Quote="LOC_QUOTE_WONDER_GREAT_DOLMEN" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_GREAT_DOLMEN" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_CLIFF_FACE_JEC" Quote="LOC_QUOTE_WONDER_CLIFF_FACE_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_CLIFF_FACE_JEC" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_GREAT_DOLMEN_JEC" Quote="LOC_QUOTE_WONDER_GREAT_DOLMEN_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_GREAT_DOLMEN_JEC" QuoteAudio="VO_Quote_Pyramids"/>
 	
-		<Row Type="WONDER_MOUND" Quote="LOC_QUOTE_WONDER_MOUND" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_MOUND" QuoteAudio="VO_Quote_Pyramids"/>
-		<Row Type="WONDER_PASSAGE_GRAVE" Quote="LOC_QUOTE_WONDER_PASSAGE_GRAVE" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_PASSAGE_GRAVE" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_MOUND_JEC" Quote="LOC_QUOTE_WONDER_MOUND_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_MOUND_JEC" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_PASSAGE_GRAVE_JEC" Quote="LOC_QUOTE_WONDER_PASSAGE_GRAVE_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_PASSAGE_GRAVE_JEC" QuoteAudio="VO_Quote_Pyramids"/>
 		
-		<Row Type="WONDER_STEP_PYRAMID" Quote="LOC_QUOTE_WONDER_STEP_PYRAMID" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_STEP_PYRAMID" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_STEP_PYRAMID_JEC" Quote="LOC_QUOTE_WONDER_STEP_PYRAMID_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_STEP_PYRAMID_JEC" QuoteAudio="VO_Quote_Pyramids"/>
 		
-		<Row Type="WONDER_TELL" Quote="LOC_QUOTE_WONDER_TELL" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_TELL" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_TELL_JEC" Quote="LOC_QUOTE_WONDER_TELL_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_TELL_JEC" QuoteAudio="VO_Quote_Pyramids"/>
 		
-		<Row Type="WONDER_TERRACES" Quote="LOC_QUOTE_WONDER_TERRACES" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_TERRACES" QuoteAudio="VO_Quote_Pyramids"/>
-		<Row Type="WONDER_TROPAION" Quote="LOC_QUOTE_WONDER_TROPAION" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_PYRAMIDS" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_TERRACES_JEC" Quote="LOC_QUOTE_WONDER_TERRACES_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_TERRACES_JEC" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_TROPAION_JEC" Quote="LOC_QUOTE_WONDER_TROPAION_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_PYRAMIDS" QuoteAudio="VO_Quote_Pyramids"/>
 		
-		<Row Type="WONDER_ZIGGURAT" Quote="LOC_QUOTE_WONDER_ZIGGURAT" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_ZIGGURAT" QuoteAudio="VO_Quote_Pyramids"/>
+		<Row Type="WONDER_ZIGGURAT_JEC" Quote="LOC_QUOTE_WONDER_ZIGGURAT_JEC" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_ZIGGURAT_JEC" QuoteAudio="VO_Quote_Pyramids"/>
 	</TypeQuotes>
 
 	<Constructibles>
-		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE" Name="LOC_WONDER_ASTRONOMICAL_DEVICE_NAME" Description="LOC_WONDER_ASTRONOMICAL_DEVICE_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE_JEC" Name="LOC_WONDER_ASTRONOMICAL_DEVICE_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 		
-		<Row ConstructibleType="WONDER_CLIFF_FACE" Name="LOC_WONDER_CLIFF_FACE_NAME" Description="LOC_WONDER_CLIFF_FACE_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
-		<Row ConstructibleType="WONDER_GREAT_DOLMEN" Name="LOC_WONDER_GREAT_DOLMEN_NAME" Description="LOC_WONDER_GREAT_DOLMEN_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_CLIFF_FACE_JEC" Name="LOC_WONDER_CLIFF_FACE_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_GREAT_DOLMEN_JEC" Name="LOC_WONDER_GREAT_DOLMEN_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 		
-		<Row ConstructibleType="WONDER_MOUND" Name="LOC_WONDER_MOUND_NAME" Description="LOC_WONDER_MOUND_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
-		<Row ConstructibleType="WONDER_PASSAGE_GRAVE" Name="LOC_WONDER_PASSAGE_GRAVE_NAME" Description="LOC_WONDER_PASSAGE_GRAVE_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_MOUND_JEC" Name="LOC_WONDER_MOUND_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_PASSAGE_GRAVE_JEC" Name="LOC_WONDER_PASSAGE_GRAVE_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 
-		<Row ConstructibleType="WONDER_STEP_PYRAMID" Name="LOC_WONDER_STEP_PYRAMID_NAME" Description="LOC_WONDER_STEP_PYRAMID_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_STEP_PYRAMID_JEC" Name="LOC_WONDER_STEP_PYRAMID_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 		
-		<Row ConstructibleType="WONDER_TELL" Name="LOC_WONDER_TELL_NAME" Description="LOC_WONDER_TELL_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_TELL_JEC" Name="LOC_WONDER_TELL_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 		
-		<Row ConstructibleType="WONDER_TERRACES" Name="LOC_WONDER_TERRACES_NAME" Description="LOC_WONDER_TERRACES_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
-		<Row ConstructibleType="WONDER_TROPAION" Name="LOC_WONDER_TROPAION_NAME" Description="LOC_WONDER_TROPAION_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_TERRACES_JEC" Name="LOC_WONDER_TERRACES_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_TROPAION_JEC" Name="LOC_WONDER_TROPAION_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 
-		<Row ConstructibleType="WONDER_ZIGGURAT" Name="LOC_WONDER_ZIGGURAT_NAME" Description="LOC_WONDER_ZIGGURAT_DESCRIPTION" Tooltip="LOC_WONDER_PYRAMIDS_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
+		<Row ConstructibleType="WONDER_ZIGGURAT_JEC" Name="LOC_WONDER_ZIGGURAT_JEC_NAME" Description="LOC_WONDER_GENERIC_JEC_DESCRIPTION" Tooltip="LOC_WONDER_GENERIC_JEC_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" AdjacentTerrain="TERRAIN_NAVIGABLE_RIVER" RequiresUnlock="true" />
 
 	</Constructibles>
 
 	<Wonders>
-		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE_JEC" MaxWorldInstances="1" />
 
-		<Row ConstructibleType="WONDER_CLIFF_FACE" MaxWorldInstances="1" />
-		<Row ConstructibleType="WONDER_GREAT_DOLMEN" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_CLIFF_FACE_JEC" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_GREAT_DOLMEN_JEC" MaxWorldInstances="1" />
 
-		<Row ConstructibleType="WONDER_MOUND" MaxWorldInstances="1" />
-		<Row ConstructibleType="WONDER_PASSAGE_GRAVE" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_MOUND_JEC" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_PASSAGE_GRAVE_JEC" MaxWorldInstances="1" />
 
-		<Row ConstructibleType="WONDER_STEP_PYRAMID" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_STEP_PYRAMID_JEC" MaxWorldInstances="1" />
 
-		<Row ConstructibleType="WONDER_TELL" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_TELL_JEC" MaxWorldInstances="1" />
 
-		<Row ConstructibleType="WONDER_TERRACES" MaxWorldInstances="1" />
-		<Row ConstructibleType="WONDER_TROPAION" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_TERRACES_JEC" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_TROPAION_JEC" MaxWorldInstances="1" />
 
-		<Row ConstructibleType="WONDER_ZIGGURAT" MaxWorldInstances="1" />
+		<Row ConstructibleType="WONDER_ZIGGURAT_JEC" MaxWorldInstances="1" />
 	</Wonders>
 
 	<TypeTags>
-		<Row Type="WONDER_ASTRONOMICAL_DEVICE" Tag="AGELESS"/>
+		<Row Type="WONDER_ASTRONOMICAL_DEVICE_JEC" Tag="AGELESS"/>
 
-		<Row Type="WONDER_CLIFF_FACE" Tag="AGELESS"/>
-		<Row Type="WONDER_GREAT_DOLMEN" Tag="AGELESS"/>
+		<Row Type="WONDER_CLIFF_FACE_JEC" Tag="AGELESS"/>
+		<Row Type="WONDER_GREAT_DOLMEN_JEC" Tag="AGELESS"/>
 
-		<Row Type="WONDER_MOUND" Tag="AGELESS"/>
-		<Row Type="WONDER_PASSAGE_GRAVE" Tag="AGELESS"/>
+		<Row Type="WONDER_MOUND_JEC" Tag="AGELESS"/>
+		<Row Type="WONDER_PASSAGE_GRAVE_JEC" Tag="AGELESS"/>
 
-		<Row Type="WONDER_STEP_PYRAMID" Tag="AGELESS"/>
+		<Row Type="WONDER_STEP_PYRAMID_JEC" Tag="AGELESS"/>
 
-		<Row Type="WONDER_TELL" Tag="AGELESS"/>
+		<Row Type="WONDER_TELL_JEC" Tag="AGELESS"/>
 
-		<Row Type="WONDER_TERRACES" Tag="AGELESS"/>
-		<Row Type="WONDER_TROPAION" Tag="AGELESS"/>
+		<Row Type="WONDER_TERRACES_JEC" Tag="AGELESS"/>
+		<Row Type="WONDER_TROPAION_JEC" Tag="AGELESS"/>
 
-		<Row Type="WONDER_ZIGGURAT" Tag="AGELESS"/>
+		<Row Type="WONDER_ZIGGURAT_JEC" Tag="AGELESS"/>
 	</TypeTags>
 
 	<Constructible_ValidDistricts>
-		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE_JEC" DistrictType="DISTRICT_WONDER"/>
 
-		<Row ConstructibleType="WONDER_CLIFF_FACE" DistrictType="DISTRICT_WONDER"/>
-		<Row ConstructibleType="WONDER_GREAT_DOLMEN" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_CLIFF_FACE_JEC" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_GREAT_DOLMEN_JEC" DistrictType="DISTRICT_WONDER"/>
 
-		<Row ConstructibleType="WONDER_MOUND" DistrictType="DISTRICT_WONDER"/>
-		<Row ConstructibleType="WONDER_PASSAGE_GRAVE" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_MOUND_JEC" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_PASSAGE_GRAVE_JEC" DistrictType="DISTRICT_WONDER"/>
 
-		<Row ConstructibleType="WONDER_STEP_PYRAMID" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_STEP_PYRAMID_JEC" DistrictType="DISTRICT_WONDER"/>
 
-		<Row ConstructibleType="WONDER_TELL" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_TELL_JEC" DistrictType="DISTRICT_WONDER"/>
 
-		<Row ConstructibleType="WONDER_TERRACES" DistrictType="DISTRICT_WONDER"/>
-		<Row ConstructibleType="WONDER_TROPAION" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_TERRACES_JEC" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_TROPAION_JEC" DistrictType="DISTRICT_WONDER"/>
 
-		<Row ConstructibleType="WONDER_ZIGGURAT" DistrictType="DISTRICT_WONDER"/>
+		<Row ConstructibleType="WONDER_ZIGGURAT_JEC" DistrictType="DISTRICT_WONDER"/>
 
 	</Constructible_ValidDistricts>
 
 	<Constructible_ValidBiomes>
 	<!-- BIOME_DESERT -->
-		<Row ConstructibleType="WONDER_STEP_PYRAMID" BiomeType="BIOME_DESERT"/>
-		<Row ConstructibleType="WONDER_ZIGGURAT" BiomeType="BIOME_DESERT"/>
+		<Row ConstructibleType="WONDER_STEP_PYRAMID_JEC" BiomeType="BIOME_DESERT"/>
+		<Row ConstructibleType="WONDER_ZIGGURAT_JEC" BiomeType="BIOME_DESERT"/>
 
 	<!-- BIOME_GRASSLAND -->
-		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE" BiomeType="BIOME_GRASSLAND"/>
-		<Row ConstructibleType="WONDER_TELL" BiomeType="BIOME_GRASSLAND"/>
+		<Row ConstructibleType="WONDER_ASTRONOMICAL_DEVICE_JEC" BiomeType="BIOME_GRASSLAND"/>
+		<Row ConstructibleType="WONDER_TELL_JEC" BiomeType="BIOME_GRASSLAND"/>
 
 	<!-- BIOME_PLAINS -->	
-	<Row ConstructibleType="WONDER_MOUND" BiomeType="BIOME_PLAINS"/>	
-	<Row ConstructibleType="WONDER_TROPAION" BiomeType="BIOME_PLAINS"/>
+	<Row ConstructibleType="WONDER_MOUND_JEC" BiomeType="BIOME_PLAINS"/>	
+	<Row ConstructibleType="WONDER_TROPAION_JEC" BiomeType="BIOME_PLAINS"/>
 
 	<!-- BIOME_TROPICAL -->
-		<Row ConstructibleType="WONDER_CLIFF_FACE" BiomeType="BIOME_TROPICAL"/>
-		<Row ConstructibleType="WONDER_TERRACES" BiomeType="BIOME_TROPICAL"/>
+		<Row ConstructibleType="WONDER_CLIFF_FACE_JEC" BiomeType="BIOME_TROPICAL"/>
+		<Row ConstructibleType="WONDER_TERRACES_JEC" BiomeType="BIOME_TROPICAL"/>
 
 	<!-- BIOME_TUNDRA -->
-		<Row ConstructibleType="WONDER_GREAT_DOLMEN" BiomeType="BIOME_TUNDRA"/>
-		<Row ConstructibleType="WONDER_PASSAGE_GRAVE" BiomeType="BIOME_TUNDRA"/>
+		<Row ConstructibleType="WONDER_GREAT_DOLMEN_JEC" BiomeType="BIOME_TUNDRA"/>
+		<Row ConstructibleType="WONDER_PASSAGE_GRAVE_JEC" BiomeType="BIOME_TUNDRA"/>
 
 	</Constructible_ValidBiomes>
 
@@ -150,12 +146,6 @@
 
 	</Constructible_WarehouseYields>
 
-	<!-- </Warehouse_YieldChanges>
-		<Row ID="PyramidsNavigableRiverGold" YieldType="YIELD_GOLD" YieldChange="1" NavigableRiverInCity="true"/>
-		<Row ID="PyramidsMinorRiverGold" YieldType="YIELD_GOLD" YieldChange="1" MinorRiverInCity="true"/>
-		<Row ID="PyramidsNavigableRiverProduction" YieldType="YIELD_PRODUCTION" YieldChange="1" NavigableRiverInCity="true"/>
-		<Row ID="PyramidsMinorRiverProduction" YieldType="YIELD_PRODUCTION" YieldChange="1" MinorRiverInCity="true"/>
-	</Warehouse_YieldChanges> -->
 
 	<ConstructibleModifiers>
 		<!-- <Row ConstructibleType="WONDER_PYRAMIDS" ModifierId="MOD_PYRAMIDS_URBAN_GOLD"/>

@@ -84,6 +84,7 @@
 					<Item>text/en_us/MapText.xml</Item>
 					<Item>text/en_us/ConfigText.xml</Item>
 					<Item>text/en_us/VictoryText.xml</Item>
+					<Item>text/en_us/ConstructibleText.xml</Item>
 				</UpdateText>
 			</Actions>
 		</ActionGroup>
