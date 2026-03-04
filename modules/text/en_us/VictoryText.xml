@@ -22,9 +22,5 @@
 			<Text>+25% [icon:YIELD_PRODUCTION] Production towards constructing [icon:WONDER] [TIP:LOC_PEDIA_CONCEPTS_WONDERS_TOOLTIP]Wonders when constructed in [icon:YIELD_CITIES] [TIP:LOC_PEDIA_CONCEPTS_CITIES_TOOLTIP]Cities[/TIP].</Text>
 		</Row>
 
-
-
-<!-- MOD_AGE_REWARD_MILESTONE_ADJUST_TRADE_ROUTE_RANGE_JEC -->
-
 	</EnglishText>
 </Database>
