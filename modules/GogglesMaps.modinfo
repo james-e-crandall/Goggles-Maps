@@ -110,7 +110,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories02.sql</Item>
 				</UpdateDatabase>
 			</Actions>
