@@ -9,12 +9,12 @@ SET MaxPoints_Long = (MaxPoints_Long + 10 * 2);
 
 --3
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 0)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_SCIENCE';
 --3
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 3)
+SET RequiredPathPoints = (RequiredPathPoints + 2)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_SCIENCE';
 -- 6
@@ -31,12 +31,12 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_SCIENCE';
 -- LEGACY_PATH_ANTIQUITY_CULTURE
 --2
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 0)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_CULTURE';
 --2
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 3)
+SET RequiredPathPoints = (RequiredPathPoints + 2)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_CULTURE';
 --4
@@ -53,12 +53,12 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_CULTURE';
 -- LEGACY_PATH_ANTIQUITY_ECONOMIC
 --7
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 0)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_ECONOMIC';
 --7
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 6)
+SET RequiredPathPoints = (RequiredPathPoints + 5)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_ECONOMIC';
 --14
@@ -74,12 +74,12 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_ECONOMIC';
 --LEGACY_PATH_ANTIQUITY_MILITARY
 --6
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 1)
+SET RequiredPathPoints = (RequiredPathPoints + 0)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 --6
 UPDATE AgeProgressionMilestones
-SET RequiredPathPoints = (RequiredPathPoints + 4)
+SET RequiredPathPoints = (RequiredPathPoints + 2)
 WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_1a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 --9

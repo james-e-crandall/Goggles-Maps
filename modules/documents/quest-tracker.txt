@@ -1,0 +1,7 @@
+remove quest origin 'narrative'
+
+look in 'base standard'
+
+NarrativeQuestManagerClass
+
+Narrative-quest-manager.js
