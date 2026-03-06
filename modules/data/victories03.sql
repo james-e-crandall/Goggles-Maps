@@ -25,7 +25,7 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_SCIENCE';
 -- 6
 UPDATE AgeProgressionMilestones
 SET RequiredPathPoints = (RequiredPathPoints + 5)
-WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2b'
+WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_SCIENCE';
 -- 10
 UPDATE AgeProgressionMilestones
@@ -52,7 +52,7 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_CULTURE';
 --4
 UPDATE AgeProgressionMilestones
 SET RequiredPathPoints = (RequiredPathPoints + 5)
-WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2b'
+WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_CULTURE';
 --7
 UPDATE AgeProgressionMilestones
@@ -79,7 +79,7 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_ECONOMIC';
 --14
 UPDATE AgeProgressionMilestones
 SET RequiredPathPoints = (RequiredPathPoints + 11)
-WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2b'
+WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_ECONOMIC';
 --20
 UPDATE AgeProgressionMilestones
@@ -105,7 +105,7 @@ and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 --9
 UPDATE AgeProgressionMilestones
 SET RequiredPathPoints = (RequiredPathPoints + 5)
-WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2b'
+WHERE AgeProgressionEventType = 'AGE_PROGRESSION_PLAYER_MILESTONE_2a'
 and LegacyPathType='LEGACY_PATH_ANTIQUITY_MILITARY';
 --12
 UPDATE AgeProgressionMilestones

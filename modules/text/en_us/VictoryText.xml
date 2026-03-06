@@ -23,7 +23,7 @@
 		</Row>
 
 		<Row Tag="LOC_LEGACY_PATH_REWARD_MILESTONE_ADJUST_TRADE_ROUTE_RANGE_JEC_DESCRIPTION">
-			<Text>+10 [icon:TRADE_ROUTE]Trade Route range..</Text>
+			<Text>+10 [icon:TRADE_ROUTE]Trade Route range.\.</Text>
 		</Row>
 
 	</EnglishText>
