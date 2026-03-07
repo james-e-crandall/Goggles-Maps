@@ -1,11 +1,11 @@
 UPDATE AgeProgressions
-SET MaxPoints_Abbreviated = (MaxPoints_Abbreviated + 10 * 1);
+SET MaxPoints_Abbreviated = (MaxPoints_Abbreviated + 20 * 1);
 
 UPDATE AgeProgressions
-SET MaxPoints_Standard = (MaxPoints_Standard + 10 * 1);
+SET MaxPoints_Standard = (MaxPoints_Standard + 20 * 1);
 
 UPDATE AgeProgressions
-SET MaxPoints_Long = (MaxPoints_Long + 10 * 1);
+SET MaxPoints_Long = (MaxPoints_Long + 20 * 1);
 
 
 --3
