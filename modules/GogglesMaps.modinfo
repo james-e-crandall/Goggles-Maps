@@ -101,7 +101,6 @@
 					<LoadOrder>999</LoadOrder>
 					<Item>data/victories-antiquity-a.xml</Item>
 					<Item>data/legacy-path-gameeffects.xml</Item>
-					<!-- <Item>data/discovery-stories.sql</Item> -->
 					<Item>data/discovery-stories-1.xml</Item>
 					<Item>data/discovery-stories-gameeffects-1.xml</Item>
 					<Item>data/discovery-stories-2.xml</Item>
@@ -130,6 +129,8 @@
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
 					<Item>data/victories02.sql</Item>
+					<Item>data/constructibles.xml</Item>
+					<Item>data/progression-trees-tech.xml</Item>
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
