@@ -7,39 +7,43 @@
 	</Maps>
 	<MapSizes>
 		<!-- Standard MapSize Domain - For ages where civs on both landmasses can win victories. -->
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_12_PLAYER_128_80_JEC" Name="LOC_MAPSIZE_12_PLAYER_128_80_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_128_80_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="9" DefaultPlayers="12" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_15_PLAYER_128_90_JEC" Name="LOC_MAPSIZE_15_PLAYER_128_90_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_128_90_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="12" DefaultPlayers="15" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_18_PLAYER_128_100_JEC" Name="LOC_MAPSIZE_18_PLAYER_128_100_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_128_100_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="15" DefaultPlayers="18" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_21_PLAYER_128_120_JEC" Name="LOC_MAPSIZE_21_PLAYER_128_120_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_128_120_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="18" DefaultPlayers="21" SortIndex="200"/>
-		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Name="LOC_MAPSIZE_24_PLAYER_128_150_JEC_NAME" Description="LOC_MAPSIZE_24_PLAYER_128_150_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="23" MaxHumans="21" DefaultPlayers="23" SortIndex="200"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_106_66_JEC" Name="LOC_MAPSIZE_106_66_JEC_NAME" Description="LOC_MAPSIZE_106_66_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="12" DefaultPlayers="12" SortIndex="60"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_128_80_JEC" Name="LOC_MAPSIZE_128_80_JEC_NAME" Description="LOC_MAPSIZE_128_80_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="15" DefaultPlayers="15" SortIndex="212"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_128_90_JEC" Name="LOC_MAPSIZE_128_90_JEC_NAME" Description="LOC_MAPSIZE_128_90_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="18" DefaultPlayers="18" SortIndex="215"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_128_100_JEC" Name="LOC_MAPSIZE_128_100_JEC_NAME" Description="LOC_MAPSIZE_128_100_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="21" DefaultPlayers="21" SortIndex="218"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_128_120_JEC" Name="LOC_MAPSIZE_128_120_JEC_NAME" Description="LOC_MAPSIZE_128_120_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="24" MaxHumans="24" DefaultPlayers="24" SortIndex="221"/>
+		<Row Domain="StandardMapSizes" MapSizeType="MAPSIZE_128_150_JEC" Name="LOC_MAPSIZE_128_150_JEC_NAME" Description="LOC_MAPSIZE_128_150_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="27" MaxHumans="27" DefaultPlayers="27" SortIndex="223"/>
 		
 		<!-- Distant Lands MapSize Domain - For ages where only civs on landmass1 can win victories. 
 			This domain has lower MaxHumans so human players will only spawn on landmass1.  -->
-
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_12_PLAYER_128_80_JEC" Name="LOC_MAPSIZE_12_PLAYER_128_80_JEC_NAME" Description="LOC_MAPSIZE_12_PLAYER_128_80_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="4" DefaultPlayers="12" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_15_PLAYER_128_90_JEC" Name="LOC_MAPSIZE_15_PLAYER_128_90_JEC_NAME" Description="LOC_MAPSIZE_15_PLAYER_128_90_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="7" DefaultPlayers="15" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_18_PLAYER_128_100_JEC" Name="LOC_MAPSIZE_18_PLAYER_128_100_JEC_NAME" Description="LOC_MAPSIZE_18_PLAYER_128_100_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="10" DefaultPlayers="18" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_21_PLAYER_128_120_JEC" Name="LOC_MAPSIZE_21_PLAYER_128_120_JEC_NAME" Description="LOC_MAPSIZE_21_PLAYER_128_120_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="13" DefaultPlayers="21" SortIndex="200"/>
-		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_24_PLAYER_128_150_JEC" Name="LOC_MAPSIZE_24_PLAYER_128_150_JEC_NAME" Description="LOC_MAPSIZE_24_PLAYER_128_150_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="24" MaxHumans="16" DefaultPlayers="24" SortIndex="200"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_106_66_JEC" Name="LOC_MAPSIZE_106_66_JEC_NAME" Description="LOC_MAPSIZE_106_66_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="12" MaxHumans="12" DefaultPlayers="12" SortIndex="60"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_128_80_JEC" Name="LOC_MAPSIZE_128_80_JEC_NAME" Description="LOC_MAPSIZE_128_80_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="15" MaxHumans="15" DefaultPlayers="15" SortIndex="212"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_128_90_JEC" Name="LOC_MAPSIZE_128_90_JEC_NAME" Description="LOC_MAPSIZE_128_90_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="18" MaxHumans="18" DefaultPlayers="18" SortIndex="215"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_128_100_JEC" Name="LOC_MAPSIZE_128_100_JEC_NAME" Description="LOC_MAPSIZE_128_100_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="21" MaxHumans="21" DefaultPlayers="21" SortIndex="218"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_128_120_JEC" Name="LOC_MAPSIZE_128_120_JEC_NAME" Description="LOC_MAPSIZE_128_120_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="24" MaxHumans="24" DefaultPlayers="24" SortIndex="221"/>
+		<Row Domain="DistantLandsMapSizes" MapSizeType="MAPSIZE_128_150_JEC" Name="LOC_MAPSIZE_128_150_JEC_NAME" Description="LOC_MAPSIZE_128_150_JEC_DESCRIPTION" MinPlayers="2" MaxPlayers="27" MaxHumans="27" DefaultPlayers="27" SortIndex="223"/>
 
 	</MapSizes>
 	<SupportedValuesByMap>
 		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapStartPositions" Value="START_POSITION_STANDARD" />
 
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_12_PLAYER_128_80_JEC" 		/>
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_12_PLAYER_128_80_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_106_66_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_106_66_JEC" 		/>
 
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_15_PLAYER_128_90_JEC" 		/>
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_15_PLAYER_128_90_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_128_80_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_128_80_JEC" 		/>
 
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_18_PLAYER_128_100_JEC" 		/>
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_18_PLAYER_128_100_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_128_90_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_128_90_JEC" 		/>
 
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_21_PLAYER_128_120_JEC" 		/>
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_21_PLAYER_128_120_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_128_100_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_128_100_JEC" 		/>
 
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_24_PLAYER_128_150_JEC" 		/>
-		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_24_PLAYER_128_150_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_128_120_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_128_120_JEC" 		/>
+
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_128_150_JEC" 		/>
+		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_128_150_JEC" 		/>
 	</SupportedValuesByMap>
 
 	<Parameters>

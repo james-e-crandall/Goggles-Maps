@@ -37,39 +37,46 @@
 		<Criteria id="goggles-map-in-use">
 			<MapInUse>{goggles-maps}maps/continents-voronoi-goggles.js</MapInUse>
 		</Criteria>
-		<Criteria id="MAPSIZE_12_PLAYER_128_80_JEC">
+		<Criteria id="MAPSIZE_106_66_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_12_PLAYER_128_80_JEC</Value>
+				<Value>MAPSIZE_106_66_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="MAPSIZE_15_PLAYER_128_90_JEC">
+		<Criteria id="MAPSIZE_128_80_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_15_PLAYER_128_90_JEC</Value>
+				<Value>MAPSIZE_128_80_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="MAPSIZE_18_PLAYER_128_100_JEC">
+		<Criteria id="MAPSIZE_128_90_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_18_PLAYER_128_100_JEC</Value>
+				<Value>MAPSIZE_128_90_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="MAPSIZE_21_PLAYER_128_120_JEC">
+		<Criteria id="MAPSIZE_128_100_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_21_PLAYER_128_120_JEC</Value>
+				<Value>MAPSIZE_128_100_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
-		<Criteria id="MAPSIZE_24_PLAYER_128_150_JEC">
+		<Criteria id="MAPSIZE_128_120_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_24_PLAYER_128_150_JEC</Value>
+				<Value>MAPSIZE_128_120_JEC</Value>
+			</ConfigurationValueMatches>
+		</Criteria>
+		<Criteria id="MAPSIZE_128_150_JEC">
+			<ConfigurationValueMatches>
+				<Group>Map</Group>
+				<ConfigurationId>SizeType</ConfigurationId>
+				<Value>MAPSIZE_128_150_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 	</ActionCriteria>
@@ -102,7 +109,7 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_12_PLAYER_128_80_JEC">
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_106_66_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
@@ -110,7 +117,15 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_15_PLAYER_128_90_JEC">
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_80_JEC">
+			<Actions>
+				<UpdateDatabase>
+					<LoadOrder>999</LoadOrder>
+					<Item>data/victories01.sql</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_90_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
@@ -118,7 +133,7 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_18_PLAYER_128_100_JEC">
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_100_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
@@ -129,7 +144,7 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_21_PLAYER_128_120_JEC">
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_120_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
@@ -140,7 +155,7 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_24_PLAYER_128_150_JEC">
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_150_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
