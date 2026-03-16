@@ -37,11 +37,11 @@
 		<Criteria id="goggles-map-in-use">
 			<MapInUse>{goggles-maps}maps/continents-voronoi-goggles.js</MapInUse>
 		</Criteria>
-		<Criteria id="MAPSIZE_106_66_JEC">
+		<Criteria id="MAPSIZE_128_66_JEC">
 			<ConfigurationValueMatches>
 				<Group>Map</Group>
 				<ConfigurationId>SizeType</ConfigurationId>
-				<Value>MAPSIZE_106_66_JEC</Value>
+				<Value>MAPSIZE_128_66_JEC</Value>
 			</ConfigurationValueMatches>
 		</Criteria>
 		<Criteria id="MAPSIZE_128_80_JEC">
@@ -108,7 +108,7 @@
 				</UpdateDatabase>
 			</Actions>
 		</ActionGroup>
-		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_106_66_JEC">
+		<ActionGroup id="goggles-maps-size-type" scope="game" criteria="MAPSIZE_128_66_JEC">
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>

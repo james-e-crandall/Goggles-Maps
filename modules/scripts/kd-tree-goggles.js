@@ -139,11 +139,12 @@ var MapSize = /* @__PURE__ */ ((MapSize2) => {
   MapSize2[MapSize2["Standard"] = 2] = "Standard";
   MapSize2[MapSize2["Large"] = 3] = "Large";
   MapSize2[MapSize2["Huge"] = 4] = "Huge";
-  MapSize2[MapSize2["Humungous"] = 5] = "Humungous";
-  MapSize2[MapSize2["Mammoth"] = 6] = "Mammoth";
-  MapSize2[MapSize2["Gargantuan"] = 7] = "Gargantuan";
-  MapSize2[MapSize2["Jumbo"] = 8] = "Jumbo";
-  MapSize2[MapSize2["Bodacious"] = 9] = "Bodacious";
+  MapSize2[MapSize2["Jumbo"] = 5] = "Jumbo";
+  MapSize2[MapSize2["Humungous"] = 6] = "Humungous";
+  MapSize2[MapSize2["Mammoth"] = 7] = "Mammoth";
+  MapSize2[MapSize2["Gargantuan"] = 8] = "Gargantuan";
+  MapSize2[MapSize2["Leviathan"] = 9] = "Leviathan";
+  MapSize2[MapSize2["Bodacious"] = 10] = "Bodacious";
   return MapSize2;
 })(MapSize || {});
 const MapDims = {
@@ -152,11 +153,12 @@ const MapDims = {
   [2 /* Standard */]: { x: 84, y: 54 },
   [3 /* Large */]: { x: 96, y: 60 },
   [4 /* Huge */]: { x: 106, y: 66 },
-  [5 /* Humungous */]: { x: 128, y: 80 },
-  [6 /* Mammoth */]: { x: 128, y: 90 },
-  [7 /* Gargantuan */]: { x: 128, y: 100 },
-  [8 /* Jumbo */]: { x: 128, y: 120 },
-  [9 /* Bodacious */]: { x: 128, y: 150 }
+  [5 /* Jumbo */]: { x: 128, y: 66 },
+  [6 /* Humungous */]: { x: 128, y: 80 },
+  [7 /* Mammoth */]: { x: 128, y: 90 },
+  [8 /* Gargantuan */]: { x: 128, y: 100 },
+  [9 /* Leviathan */]: { x: 128, y: 120 },
+  [10 /* Bodacious */]: { x: 128, y: 150 }
 };
 var RegionType = /* @__PURE__ */ ((RegionType2) => {
   RegionType2[RegionType2["None"] = 0] = "None";

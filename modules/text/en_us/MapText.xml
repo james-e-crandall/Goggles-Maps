@@ -2,10 +2,10 @@
 <Database>
 	<EnglishText>
 
-		<Replace Tag="LOC_MAPSIZE_106_66_JEC_NAME">
+		<Replace Tag="LOC_MAPSIZE_128_66_JEC_NAME">
 			<Text>12 Players (106x66)</Text>
 		</Replace>
-		<Replace Tag="LOC_MAPSIZE_106_66_JEC_DESCRIPTION">
+		<Replace Tag="LOC_MAPSIZE_128_66_JEC_DESCRIPTION">
 			<Text>An huge map for epic, long-duration battles.</Text>
 		</Replace>
 

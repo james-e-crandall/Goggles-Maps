@@ -552,10 +552,11 @@ class ContinentGenerator extends MapGenerator {
     [MapSize.Standard]: {},
     [MapSize.Large]: {},
     [MapSize.Huge]: {},
+    [MapSize.Jumbo]: {},
     [MapSize.Humungous]: {},
     [MapSize.Mammoth]: {},
     [MapSize.Gargantuan]: {},
-    [MapSize.Jumbo]: {},
+    [MapSize.Leviathan]: {},
     [MapSize.Bodacious]: {}
   };
   constructor() {
