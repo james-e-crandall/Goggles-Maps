@@ -44,6 +44,8 @@
 
 		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="StandardMapSizes"		Value="MAPSIZE_128_150_JEC" 		/>
 		<Row Map="{goggles-maps}maps/continents-voronoi-goggles.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_128_150_JEC" 		/>
+
+
 	</SupportedValuesByMap>
 
 	<Parameters>

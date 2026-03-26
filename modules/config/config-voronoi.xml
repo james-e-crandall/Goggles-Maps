@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<SupportedValuesByMap>
+
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_TINY" 		/>
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_TINY" 		/>
+
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_SMALL" 		/>
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_SMALL" 		/>
+
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_STANDARD" 		/>
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_STANDARD" 		/>
+
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_LARGE" 		/>
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_LARGE" 		/>
+
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_HUGE" 		/>
+		<Row Map="{base-standard}maps/continents-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_HUGE" 		/>
+
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_TINY" 		/>
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_TINY" 		/>
+
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_SMALL" 		/>
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_SMALL" 		/>
+
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_STANDARD" 		/>
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_STANDARD" 		/>
+
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_LARGE" 		/>
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_LARGE" 		/>
+
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_HUGE" 		/>
+		<Row Map="{base-standard}maps/pangaea-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_HUGE" 		/>
+
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_TINY" 		/>
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_TINY" 		/>
+
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_SMALL" 		/>
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_SMALL" 		/>
+
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_STANDARD" 		/>
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_STANDARD" 		/>
+
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_LARGE" 		/>
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_LARGE" 		/>
+
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="StandardMapSizes"		Value="MAPSIZE_HUGE" 		/>
+		<Row Map="{base-standard}maps/shattered-seas-voronoi.js" Domain="DistantLandsMapSizes"	Value="MAPSIZE_HUGE" 		/>
+	</SupportedValuesByMap>
+
+</Database>
