@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Types>
+		<Replace Type="MAPSIZE_128_66_MP_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_128_80_MP_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_128_90_MP_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_128_100_MP_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_128_120_MP_JEC" Kind="KIND_MAPSIZE"/>
+		<Replace Type="MAPSIZE_128_150_MP_JEC" Kind="KIND_MAPSIZE"/>
+	</Types>
+	<Maps>
+		<Replace MapSizeType="MAPSIZE_128_66_MP_JEC" Name="LOC_MAPSIZE_128_66_MP_JEC_NAME" Description="LOC_MAPSIZE_128_66_MP_JEC_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="4" PlayersLandmass2="4" GridWidth="128" GridHeight="66" NumNaturalWonders="7" OceanWidth="8" LakeSizeCutoff="10" LakeGenerationFrequency="25" Continents="6" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_128_80_MP_JEC" Name="LOC_MAPSIZE_128_80_MP_JEC_NAME" Description="LOC_MAPSIZE_128_80_MP_JEC_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="4" PlayersLandmass2="4" GridWidth="128" GridHeight="80" NumNaturalWonders="8" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="7" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_128_90_MP_JEC" Name="LOC_MAPSIZE_128_90_MP_JEC_NAME" Description="LOC_MAPSIZE_128_90_MP_JEC_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="4" PlayersLandmass2="4" GridWidth="128" GridHeight="90" NumNaturalWonders="9" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="8" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_128_100_MP_JEC" Name="LOC_MAPSIZE_128_100_MP_JEC_NAME" Description="LOC_MAPSIZE_128_100_MP_JEC_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="4" PlayersLandmass2="4" GridWidth="128" GridHeight="100" NumNaturalWonders="10" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="10" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_128_120_MP_JEC" Name="LOC_MAPSIZE_128_120_MP_JEC_NAME" Description="LOC_MAPSIZE_128_120_MP_JEC_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="4" PlayersLandmass2="4" GridWidth="128" GridHeight="120" NumNaturalWonders="12" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="10" StartSectorRows="4" StartSectorCols="3"/>
+		<Replace MapSizeType="MAPSIZE_128_150_MP_JEC" Name="LOC_MAPSIZE_128_150_MP_JEC_NAME" Description="LOC_MAPSIZE_128_150_MP_JEC_DESCRIPTION" DefaultPlayers="8" PlayersLandmass1="4" PlayersLandmass2="4" GridWidth="128" GridHeight="150" NumNaturalWonders="17" OceanWidth="10" LakeSizeCutoff="12" LakeGenerationFrequency="25" Continents="12" StartSectorRows="4" StartSectorCols="3"/>
+	</Maps>	
+
+	<MapResourceMinimumAmountModifier>
+		<!--====Default is used if this data isn't filled out for a map type. Tt ensures the resource gen stays consistent per map size================-->
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_128_66_MP_JEC" Amount="4"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_128_80_MP_JEC" Amount="6"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_128_90_MP_JEC" Amount="8"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_128_100_MP_JEC" Amount="10"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_128_120_MP_JEC" Amount="12"/>
+		<Row MapType="DEFAULT" MapSizeType="MAPSIZE_128_150_MP_JEC" Amount="14"/>
+	</MapResourceMinimumAmountModifier>
+
+	<MapIslandBehavior>
+		<Row MapType="LOC_MAP_CONTINENTS_MP_JEC_NAME" AgeType="AGE_EXPLORATION" ResourceClassType="RESOURCECLASS_TREASURE" />
+	</MapIslandBehavior>
+
+	<MapResourceMinimumAmountModifier>
+		<!--==============================================================================-->
+		<Row MapType="LOC_MAP_CONTINENTS_JEC_NAME" MapSizeType="MAPSIZE_128_66_MP_JEC" Amount="4"/>
+		<Row MapType="LOC_MAP_CONTINENTS_JEC_NAME" MapSizeType="MAPSIZE_128_80_MP_JEC" Amount="4" />
+		<Row MapType="LOC_MAP_CONTINENTS_JEC_NAME" MapSizeType="MAPSIZE_128_90_MP_JEC" Amount="5" />
+		<Row MapType="LOC_MAP_CONTINENTS_JEC_NAME" MapSizeType="MAPSIZE_128_100_MP_JEC" Amount="6" />
+		<Row MapType="LOC_MAP_CONTINENTS_JEC_NAME" MapSizeType="MAPSIZE_128_120_MP_JEC" Amount="7" />
+		<Row MapType="LOC_MAP_CONTINENTS_JEC_NAME" MapSizeType="MAPSIZE_128_150_MP_JEC" Amount="8" />
+		<!--==============================================================================-->
+	</MapResourceMinimumAmountModifier>
+
+
+</Database>

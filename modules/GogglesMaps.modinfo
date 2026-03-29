@@ -85,10 +85,11 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/maps.xml</Item>
-
+					<Item>data/maps-mp.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
+					<Item>text/en_us/MapTextMP.xml</Item>
 					<Item>text/en_us/ConfigText.xml</Item>
 					<Item>text/en_us/VictoryText.xml</Item>
 					<Item>text/en_us/ConstructibleText.xml</Item>
@@ -99,8 +100,6 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
-					<Item>data/victories-antiquity-a.xml</Item>
-					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/discovery-stories-1.xml</Item>
 					<Item>data/discovery-stories-gameeffects-1.xml</Item>
 					<Item>data/discovery-stories-2.xml</Item>
@@ -112,6 +111,8 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-a.xml</Item>
+					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/victories01.sql</Item>
 				</UpdateDatabase>
 			</Actions>
@@ -120,6 +121,8 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-a.xml</Item>
+					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/victories01.sql</Item>
 				</UpdateDatabase>
 			</Actions>
@@ -128,6 +131,8 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-a.xml</Item>
+					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/victories02.sql</Item>
 					<Item>data/constructibles.xml</Item>
 					<Item>data/progression-trees-tech.xml</Item>
@@ -138,6 +143,8 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-a.xml</Item>
+					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories03.sql</Item>
 					<Item>data/constructibles.xml</Item>
@@ -149,6 +156,8 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-a.xml</Item>
+					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories04.sql</Item>
 					<Item>data/constructibles.xml</Item>
@@ -160,6 +169,8 @@
 			<Actions>
 				<UpdateDatabase>
 					<LoadOrder>999</LoadOrder>
+					<Item>data/victories-antiquity-a.xml</Item>
+					<Item>data/legacy-path-gameeffects.xml</Item>
 					<Item>data/victories-antiquity-b.xml</Item>
 					<Item>data/victories05.sql</Item>
 					<Item>data/constructibles.xml</Item>
@@ -171,10 +182,12 @@
 			<Actions>
 				<UpdateDatabase>
 					<Item>config/config.xml</Item>
+					<Item>config/config-mp.xml</Item>
 					<Item>config/config-voronoi.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>
+					<Item>text/en_us/MapTextMP.xml</Item>
 					<Item>text/en_us/ConfigText.xml</Item>
 				</UpdateText>
 				<ImportFiles>

@@ -557,7 +557,13 @@ class ContinentGenerator extends MapGenerator {
     [MapSize.Mammoth]: {},
     [MapSize.Gargantuan]: {},
     [MapSize.Leviathan]: {},
-    [MapSize.Bodacious]: {}
+    [MapSize.Bodacious]: {},
+    [MapSize.JumboMP]: {},
+    [MapSize.HumungousMP]: {},
+    [MapSize.MammothMP]: {},
+    [MapSize.GargantuanMP]: {},
+    [MapSize.LeviathanMP]: {},
+    [MapSize.BodaciousMP]: {}
   };
   constructor() {
     super();

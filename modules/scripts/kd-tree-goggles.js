@@ -145,6 +145,12 @@ var MapSize = /* @__PURE__ */ ((MapSize2) => {
   MapSize2[MapSize2["Gargantuan"] = 8] = "Gargantuan";
   MapSize2[MapSize2["Leviathan"] = 9] = "Leviathan";
   MapSize2[MapSize2["Bodacious"] = 10] = "Bodacious";
+  MapSize2[MapSize2["JumboMP"] = 11] = "JumboMP";
+  MapSize2[MapSize2["HumungousMP"] = 12] = "HumungousMP";
+  MapSize2[MapSize2["MammothMP"] = 13] = "MammothMP";
+  MapSize2[MapSize2["GargantuanMP"] = 14] = "GargantuanMP";
+  MapSize2[MapSize2["LeviathanMP"] = 15] = "LeviathanMP";
+  MapSize2[MapSize2["BodaciousMP"] = 16] = "BodaciousMP";
   return MapSize2;
 })(MapSize || {});
 const MapDims = {
@@ -158,7 +164,13 @@ const MapDims = {
   [7 /* Mammoth */]: { x: 128, y: 90 },
   [8 /* Gargantuan */]: { x: 128, y: 100 },
   [9 /* Leviathan */]: { x: 128, y: 120 },
-  [10 /* Bodacious */]: { x: 128, y: 150 }
+  [10 /* Bodacious */]: { x: 128, y: 150 },
+  [11 /* JumboMP */]: { x: 128, y: 66 },
+  [12 /* HumungousMP */]: { x: 128, y: 80 },
+  [13 /* MammothMP */]: { x: 128, y: 90 },
+  [14 /* GargantuanMP */]: { x: 128, y: 100 },
+  [15 /* LeviathanMP */]: { x: 128, y: 120 },
+  [16 /* BodaciousMP */]: { x: 128, y: 150 }
 };
 var RegionType = /* @__PURE__ */ ((RegionType2) => {
   RegionType2[RegionType2["None"] = 0] = "None";

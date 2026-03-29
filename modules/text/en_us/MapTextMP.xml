@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+
+		<Replace Tag="LOC_MAPSIZE_128_66_MP_JEC_NAME">
+			<Text>8 MP Players (106x66)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_128_66_MP_JEC_DESCRIPTION">
+			<Text>An huge map for epic, long-duration battles.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MAPSIZE_128_80_MP_JEC_NAME">
+			<Text>8 MP Players (128x80)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_128_80_MP_JEC_DESCRIPTION">
+			<Text>An humungous map for epic, long-duration battles.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MAPSIZE_128_90_MP_JEC_NAME">
+			<Text>8 MP Players (128x90)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_128_90_MP_JEC_DESCRIPTION">
+			<Text>An mammoth map for epic, long-duration battles.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MAPSIZE_128_100_MP_JEC_NAME">
+			<Text>8 MP Players (128x100)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_128_100_MP_JEC_DESCRIPTION">
+			<Text>An gargantuan map for epic, long-duration battles.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MAPSIZE_128_120_MP_JEC_NAME">
+			<Text>8 MP Players (128x120)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_128_120_MP_JEC_DESCRIPTION">
+			<Text>An jumbo map for epic, long-duration battles.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_MAPSIZE_128_150_MP_JEC_NAME">
+			<Text>8 MP Players (128x150)</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_128_150_MP_JEC_DESCRIPTION">
+			<Text>The Bodacious map is the bigest possible for epic, long-duration battles.</Text>
+		</Replace>
+		
+	</EnglishText>
+</Database>
